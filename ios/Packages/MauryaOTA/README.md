@@ -1,87 +1,23 @@
-# MauryaOTA
+# MauryaOTA 蓝牙升级
 
-`MauryaOTA` is the Phase 9 security and orchestration boundary for iOS 17+.
-It depends on the existing `MauryaProtocol`, `MauryaDevice`, and
-`MauryaBluetooth` contracts, while keeping network, BLE, signature keys, and
-checkpoint storage injectable for deterministic tests.
+MauryaOTA 是 iOS 17 OTA 的安全校验和传输边界，依赖 MauryaProtocol、MauryaDevice、MauryaBluetooth；网络、BLE、签名公钥和断点存储都通过协议注入，便于测试。
 
-## Implemented boundary
+## 实现内容
 
-- Fetches the signed manifest and artifact only over HTTPS and only from an
-  explicit host allowlist. The production URLSession client uses normal ATS/TLS
-  validation; there is no trust-all delegate or insecure transport fallback.
-- Verifies the exact manifest bytes with a versioned RSA public key using
-  `SecKeyVerifySignature` and RSA PKCS#1 v1.5 SHA-256, matching
-  `tools/build_ota_release.py`. It then validates schema, app version, variant,
-  layout, asset pack, BLE capability, monotonic secure version, size, URL, and
-  SHA-256 before sending firmware bytes.
-- Drives BLE BEGIN/DATA/STATUS/COMMIT/CANCEL as an actor. Firmware chunk size is
-  `min(118, adapter write capacity)`. Every acknowledgement is checked and
-  persisted. Retry/reconnect/poll counts are bounded and cancellation remains
-  cooperative.
-- Resumes only when device identity, target version, secure version, artifact
-  size, SHA-256, ETag, live device state, expected byte count, and confirmed
-  offset agree. The live device offset is authoritative when it is behind,
-  equal to, or ahead of the local checkpoint; otherwise BEGIN safely restarts
-  at byte zero.
-- Persists distinct verified, COMMIT-outcome-unknown, and COMMIT-confirmed
-  states. The ambiguous state is written before COMMIT because a successful
-  reboot can race the response; a definite pre-send failure restores verified
-  so a later workflow can retry. Success is emitted only after reconnecting and
-  reading the target firmware version back from GET_INFO.
-- Provides an atomic JSON checkpoint store. The app should place this directory
-  under Application Support/no-backup. `URLSessionOTAClient` owns a no-backup
-  file cache, checks available disk capacity, downloads in bounded Range chunks,
-  resumes only with `If-Range`/ETag, safely restarts for HTTP 200 fallback, 416,
-  missing validators, or changed validators, and atomically promotes the final
-  artifact before returning it for manifest size/hash validation.
+- 只从明确允许的 HTTPS 主机获取清单和镜像，使用 Security.framework 验证版本化 RSA PKCS#1 v1.5 SHA-256 签名。
+- 清单校验 schema、应用版本、变体、布局、资源包、BLE 能力、安全版本、大小、URL 和 SHA-256；任何失败都在发送固件前停止。
+- 通过 actor 驱动 BLE_BEGIN、BLE_DATA、BLE_STATUS、BLE_COMMIT、BLE_CANCEL；分片大小为 min(118, 适配器写入能力)，确认、重试、重连和取消均有界。
+- 断点恢复必须同时匹配设备身份、目标版本、安全版本、镜像大小/哈希、ETag、实时设备状态、期望字节数和偏移；不一致时安全地从零开始。
+- JSON checkpoint store 原子写入，区分已验证、提交结果未知和提交已确认；只有重连后 GET_INFO 读到目标版本才报告成功。
+- URLSessionOTAClient 支持无备份缓存、磁盘空间检查、Range/If-Range/ETag、HTTP 200/416 和校验器变化时的安全重启。
 
-`PREPARE (0x02)` is intentionally separate: firmware stores its 16-byte nonce
-and reboots into the legacy Wi-Fi SoftAP path. The BLE workflow must use
-`BLE_BEGIN (0x10)`, whose size/layout/SHA-256 fields are its preparation gate.
-Calling PREPARE before BLE_BEGIN would disconnect and switch transport modes.
+PREPARE 0x02 与 BLE_BEGIN 0x10 是不同流程：前者会保存 nonce 并重启到旧 Wi-Fi SoftAP，BLE OTA 必须直接使用 BLE_BEGIN，不能在 BLE 流程前调用 PREPARE。
 
-## Integration and background limits
+## 验证边界
 
-The app must provide an `OTADeviceTransport` adapter around the real
-`MauryaCentralTransport`, including its current safe firmware payload capacity
-and a bounded reconnect operation. The package never starts an unbounded task,
-claims fixed-rate BLE execution in the background, or treats background runtime
-as guaranteed. On suspension/expiration the app cancels its structured task and
-keeps the checkpoint; foreground reconciliation calls `run` again. Any
-`bluetooth-central` entitlement and state-restoration behavior remains an app
-target/App Review decision with real-device evidence.
+单元测试覆盖签名/哈希/主机/布局/回滚错误、坏 ACK、丢 ACK、断点、偏移协调、提交响应丢失和版本确认。生产私钥、服务器/CDN、真实 ESP32 掉电/断线恢复和最终发布公钥不在本包中，也不能用假网络测试替代。
 
-## Release gates (not satisfied by unit tests)
-
-This package does not embed a production public key, private key, signing
-bypass, server success, or hardware success. Before Phase 9 can close:
-
-1. The release service must protect the private RSA key, publish the exact
-   signed manifest/artifact pair, and provide a versioned production public-key
-   set to `RSASHA256ManifestVerifier`. Private keys must never enter the app or
-   repository.
-2. The production server/CDN must be exercised against the Range/ETag client in
-   staging, including network changes, 200 fallback, 416, and validator changes.
-3. Real ESP32-C3 hardware must pass repeated successful updates, sampled chunk
-   boundary power loss/disconnects, resume, cancel, commit response loss, failure
-   recovery, and post-reboot GET_INFO version confirmation.
-4. Debug and Release builds must retain signature/hash/secure-version/layout
-   hard failures. There is no supported skip switch.
-
-## Verification
-
-```sh
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test -c debug
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test -c release
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
-  xcodebuild -scheme MauryaOTA -destination 'generic/platform=iOS' build
-```
-
-Tests use fake network, transport, and checkpoint actors. They cover the happy
-path, signature/hash/host/layout/rollback failures, chunk capacity and bad ACK,
-lost-ACK recovery, persisted resume, device verification failure and timeout,
-behind/equal/ahead live-offset reconciliation, two-workflow pre-send and lost
-COMMIT-response recovery, commit/reconnect/version confirmation, and real
-Security.framework RSA fixture verification. They do not claim server or
-hardware Gate completion.
+~~~
+swift test --package-path ios/Packages/MauryaOTA -c debug
+swift test --package-path ios/Packages/MauryaOTA -c release
+~~~

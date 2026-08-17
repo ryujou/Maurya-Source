@@ -1,15 +1,14 @@
-# Maurya ESP32 Web UI
+# ESP32 板端网页源码
 
-Vue 3 + Vite source for the offline ESP32 control page. The firmware does not
-need Node.js at runtime. Build and package it with:
+本目录是固件内置网页控制台的 Vue 3 + Vite 源码。网页在固件中离线运行，设备运行时不需要 Node.js；构建出的静态文件由固件资源打包脚本写入 Flash。
 
-```powershell
+## 常用命令
+
+~~~
 npm ci
 npm run build
 npm test
 python ..\tools\build_web_assets.py
-```
+~~~
 
-`public/palette.json`, `public/avatars`, and `public/group-icons` are generated,
-compact runtime assets and are intentionally tracked so firmware builds do not
-depend on the Nichirin repository or the internet.
+npm run build:ja 构建日文变体，npm run test:ja 校验日文资源。public/palette.json 等紧凑资源会被固件直接读取并受测试保护；网页通过固件提供的 HTTP API 读取设备状态、发送灯效/寄存器操作和访问 OTA 页面。

@@ -1,9 +1,10 @@
-# Host Tests
+# 固件主机测试
 
-Run from WSL:
+tests/host/ 中的 C 测试不需要 ESP32 芯片，直接编译固件组件的纯 C 部分。下面的命令从 esp32/lumia_esp32/ 目录执行，要求本机有 gcc。
 
-```bash
-cd /mnt/f/lumia/Lumia_main/lumia_esp32_low/lumia_esp32
+## 协议和运行时
+
+~~~
 gcc -std=c99 -Wall -Wextra -Werror \
   -Itests/host/include \
   -Icomponents/lumia_protocol/include \
@@ -17,104 +18,42 @@ gcc -std=c99 -Wall -Wextra -Werror \
   components/lumia_runtime/runtime_state.c \
   -o /tmp/lumia_protocol_runtime_test
 /tmp/lumia_protocol_runtime_test
-```
+~~~
 
-Additional tests:
+## 其他纯 C 测试
 
-```bash
-gcc -std=c99 -Wall -Wextra -Werror \
-  -Icomponents/lumia_effects/include \
-  -Icomponents/lumia_effect_session/include \
-  tests/host/test_effect_session.c \
-  components/lumia_effect_session/effect_session.c \
-  -o /tmp/lumia_effect_session_test
-/tmp/lumia_effect_session_test
-```
+- test_effect_session.c + components/lumia_effect_session/effect_session.c：volatile 灯效会话的序列号、开始/结束和边界。
+- test_config_store.c + components/lumia_storage/config_store.c：双槽配置读写、校验和损坏恢复。
+- components/lumia_effects/test/test_effect_engine.c：静态、左右追逐、往返、常亮、呼吸、频闪和渐变算法。
+- test_led_strip_routing.c：7 路灯带和组优先顺序。
+- test_mode_button_logic.c：GPIO9 短按/长按消抖。
+- test_sleep_switch.c：GPIO4 启动和休眠判定。
 
-```bash
-gcc -std=c99 -Wall -Wextra -Werror \
-  -Itests/host/include \
-  -Icomponents/lumia_storage/include \
-  -Icomponents/lumia_runtime/include \
-  tests/host/test_config_store.c \
-  components/lumia_storage/config_store.c \
-  -o /tmp/lumia_config_store_test
-/tmp/lumia_config_store_test
-```
+每个测试都使用同样的编译选项：
 
-Effect engine test:
+~~~
+gcc -std=c99 -Wall -Wextra -Werror [头文件目录] [测试文件] [被测源文件] -o /tmp/maurya_test
+/tmp/maurya_test
+~~~
 
-```bash
-cd /mnt/f/lumia/Lumia_main/lumia_esp32_low/lumia_esp32/components/lumia_effects/test
-gcc -std=c99 -Wall -Wextra -Werror \
-  -I../include -I.. \
-  test_effect_engine.c \
-  ../effect_engine.c \
-  ../effect_inner.c \
-  ../effect_inner_mode_steady.c \
-  ../effect_inner_mode_breath.c \
-  ../effect_inner_mode_strobe.c \
-  ../effect_inner_mode_fade.c \
-  ../effect_scene.c \
-  ../effect_scene_mode_static.c \
-  ../effect_scene_mode_chase_lr.c \
-  ../effect_scene_mode_chase_rl.c \
-  ../effect_scene_mode_pingpong.c \
-  -o /tmp/lumia_effects_test
-/tmp/lumia_effects_test
-```
+## Python 资源测试
 
-LED strip routing test:
+从项目根目录运行：
 
-```bash
-cd /mnt/f/lumia/Lumia_main/lumia_esp32_low/lumia_esp32
-gcc -std=c99 -Wall -Wextra -Werror \
-  -Itests/host/include \
-  -Icomponents/lumia_platform/include \
-  -Icomponents/lumia_effects/include \
-  tests/host/test_led_strip_routing.c \
-  components/lumia_platform/led_strip_driver.c \
-  -o /tmp/lumia_led_strip_routing_test
-/tmp/lumia_led_strip_routing_test
-```
+~~~
+python tools/test_web_assets.py
+python tools/test_flash_layout.py
+~~~
 
-Mode button logic test:
+## 自动信道测试
 
-```bash
-gcc -std=c99 -Wall -Wextra -Werror \
-  -Icomponents/lumia_platform/include \
-  tests/host/test_mode_button_logic.c \
-  components/lumia_platform/mode_button_logic.c \
-  -o /tmp/lumia_mode_button_logic_test
-/tmp/lumia_mode_button_logic_test
-```
+wifi_channel_selector.c 只在 1、6、11 三个候选信道中评分；测试会覆盖空扫描、非法信道、RSSI 截断、重叠权重和备用信道平局：
 
-Sleep switch startup-state test:
-
-```bash
-gcc -std=c99 -Wall -Wextra -Werror \
-  -Itests/host/include \
-  -Icomponents/lumia_platform/include \
-  tests/host/test_sleep_switch.c \
-  components/lumia_platform/sleep_switch.c \
-  -o /tmp/lumia_sleep_switch_test
-/tmp/lumia_sleep_switch_test
-```
-
-Web resource and compact palette test:
-
-```bash
-python3 tools/test_web_assets.py
-python3 tools/test_flash_layout.py
-```
-
-Wi-Fi automatic channel selector test:
-
-```bash
+~~~
 gcc -std=c99 -Wall -Wextra -Werror \
   -Icomponents/lumia_web \
   tests/host/test_wifi_channel_selector.c \
   components/lumia_web/wifi_channel_selector.c \
   -o /tmp/lumia_wifi_channel_selector_test
 /tmp/lumia_wifi_channel_selector_test
-```
+~~~

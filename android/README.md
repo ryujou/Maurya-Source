@@ -1,58 +1,48 @@
-# Peacock
+# Android 源码
 
-## 项目简介
-Peacock 是一个基于 Jetpack Compose 和 Material3 的 Android BLE 工具，它围绕华为/小米等通用的 FFE0/FFE1/FFE2 服务构建，向蓝牙设备以 400Hz 的 12 带能量谱数据发送帧，同时支持使用麦克风或本地音频文件生成波形。主界面集合了扫描、连接、调试与文件选择功能，目标是为需要实时频谱传输的外设提供可视化与控制入口。
+android/ 是 Maurya 的 Android 客户端工程。工程名和部分历史包名仍使用 Peacock，应用命名空间为 com.example.peacock；这不会改变与 Maurya ESP32 固件通信的协议。
 
-## 主要功能
-- 对 BLE 设备进行扫描（可选只显示 FFE0 服务）并建立 GATT 连接。
-- 自动启用 FFE2 通知并向 FFE1 特征写入 16 字节帧，帧内容固定了地址和函数码，与 CRC16 校验码组合成 400Hz 刷新率的动态谱数据。
-- 提供三种 400Hz 数据源：测试锯齿、实时麦克风、已选音频文件，切换时会自动停止当前流和谱分析器。
-- 内置麦克风（MicSpectrumEngine）和文件（FileSpectrumEngine）频谱处理器，生成 12 带幅度数据，并支持自定义采样率、块大小与地板/动态范围。
-- 通过动态快捷方式（watching_1/2/3）保持常驻入口，使用 `ForegroundKeepAliveService` 保持 TX 运行时的前台服务。
-- Debug 模式下显示所有扫描设备详细信息、状态文本与 RSSI，方便调试硬件。
+## 已实现的功能
 
-## 使用指南
-1. `minSdk 31`，需要在支持的 Android 实机/模拟器上运行并打开蓝牙。
-2. 第一次启动会请求 `BLUETOOTH_SCAN`、`BLUETOOTH_CONNECT`、`RECORD_AUDIO` 权限；没有权限时会提示。
-3. 在主界面点击“开始扫描”，选中设备后进入 Detail 页面。
-4. 在 Detail 页面可以逐个启用 `Saw`、`Mic`、`File` 模式，并在文件模式下通过文档选择器载入音频。
-5. 如果需要自定义 `sampleRate/blockSize/floorDb`，在 Detail 页面输入新的参数并保存。
-6. 通过文件进度条可以拖动播放位置，同时可以暂停 TX 或断开连接释放资源。
+- 使用 Jetpack Compose 和 Material 3 构建扫描页、设备详情页、灯效库和分享页。
+- 通过 Android BLE GATT 扫描并连接 ESP32；默认服务和特征为 FFE0、FFE1（写入）和 FFE2（通知）。BleManager 负责连接状态、MTU、分片写入、通知拼帧、重连和关闭。
+- 设备详情页可读取设备信息、遥测和诊断，控制全局场景、全局 RGB 以及 7 个独立灯组的颜色、模式和参数。
+- feature/effects 包含灯效数据模型、Blockly JSON 编译器、Maurya Script 编译器/解释器、内置灯效、程序仓库和前台播放服务。灯效编辑器的源代码在 effect_editor/，生产资源会复制到 app/src/main/assets/effect-editor。
+- 支持按组和按灯编排，协议默认几何为 7 组 × 6 颗 = 42 颗；编辑器中的循环上限也固定为 42。
+- feature/palette 读取内置应援色目录，支持自定义颜色、头像裁切、WebP 校验和本地备份。
+- feature/share 负责单个灯效或应援色的临时分享：规范化 JSON、SHA-256、gzip、二维码、导入预览、确认、历史去重和本地敏感词预检。服务器校验仍是最终依据。
+- feature/ota 负责 OTA 清单、RSA-SHA256/镜像哈希/布局与安全版本校验，以及通过 BLE 分片传输和断点恢复。
+- 应用包含中文、日文和系统语言选择；摄像头、蓝牙、麦克风和前台连接服务权限均在 AndroidManifest.xml 中声明并按页面请求。
 
-## 代码生成
-- 本项目中的部分代码、说明或文档由 AI 工具辅助生成，开发者在使用时可根据实际需求调整实现细节和风格。
+## 目录说明
 
-## 权限说明
-- `BLUETOOTH_SCAN` + `BLUETOOTH_CONNECT`：扫描 BLE 设备、建立 GATT 连接并收发数据。
-- `RECORD_AUDIO`：启动麦克风频谱引擎，实时采集声音用于驱动 TX 帧。
-- 读写文件（Storage）通过系统的 `OpenDocument` API 授权处理音频。
+~~~
+app/src/main/java/com/example/peacock/
+  ble/                 BLE 扫描、GATT 会话和写入分片
+  protocol/            Modbus、厂商帧和寄存器模型
+  feature/effects/     灯效编译、解释、仓库和播放服务
+  feature/palette/     内置/自定义应援色和头像
+  feature/share/       分享信封、二维码、导入历史和审核
+  feature/ota/         OTA 清单、传输和状态
+  ui/                  Compose 页面、导航、语言和主题
+app/src/main/assets/   编辑器和灯效资源
+effect_editor/         Blockly/Maurya Script 编辑器前端源代码
+tools/palette/         颜色目录和素材校验脚本
+~~~
 
-## 架构概览
-- `MainActivity`：单 Activity + Compose，集中管理 UI 状态、扫描/连接逻辑、频谱引擎与 400Hz TX。
-- `BleConstants/BleProtocol/BleUtils/BleModels`：提取 BLE UUID、帧协议、共用工具与数据模型。
-- `MicSpectrumEngine` / `Spectrum12Processor` / `FileSpectrumEngine`：负责 PCM 解码、FFT、带宽映射与回调，最终由 `latestBandsRef` 提供给 TX 线程。
-- `ForegroundKeepAliveService`：在 TX 运行时保持前台服务、避免系统过早杀死 BLE 连接。
-- Compose UI 通过 `ScanScreen`、`DetailScreen`、`ModeBtn` 等组件组织界面，并结合 `MutableState` 保持状态同步。
+## 构建与测试
 
-## 构建与调试
-```
-./gradlew lint
-./gradlew assembleDebug
-./gradlew installDebug   # 需要设备/模拟器
-```
-- 依赖版本集中在 `gradle/libs.versions.toml`，使用 Compose BOM 保持 UI 组件一致。
-- 采用 Java 11 编译，Compose / Kotlin 插件与 AGP 均在 `gradle/libs.versions.toml` 里声明。
-- 可在 Android Studio 中打开项目，直接运行 `app` 模块或使用命令行构建。
+工程要求 minSdk 31、targetSdk 36、Java 11；版本号、依赖和插件见 gradle/libs.versions.toml 与 app/build.gradle.kts。
 
-## 资源与风格
-- 主要背景图片 `R.drawable.background` 与图标资源（shortcut、多份 `ic_launcher`）在 `res` 目录，UI 主题在 `ui/theme` 中统一定义颜色与排版。
-- Material3 容器、`ElevatedCard`、`Scaffold` 被用来构建层次分明的扫描/详细页。
+在 Windows PowerShell 中：
 
-## 贡献
-如果要扩展：
-1. 在 `dsp` 包引入更复杂的处理器或支持更多频段。
-2. 扩展 BLE 协议（添加新的 Service/Characteristic 或解析 notify 数据）。
-3. 补充单元/UI 测试、结合工作流自动打包。
+~~~
+cd android
+.\gradlew.bat test
+.\gradlew.bat lint
+.\gradlew.bat assembleDebug
+~~~
 
-## 关于
-Peacock 是一个面向实验性音频+BLE 硬件的谱线发送器，致力于让开发者在 Android 端可视化采样、调试频谱源，并以 400Hz 频率向目标设备发送 12 带帧数据。
+assembleRelease 只有在提供 RELEASE_STORE_FILE、RELEASE_STORE_PASSWORD、RELEASE_KEY_ALIAS 和 RELEASE_KEY_PASSWORD 后才会执行签名构建。真机调试还需要 Android SDK、蓝牙权限和兼容的 ESP32 设备。
+
+编辑器改动应在 effect_editor/ 中完成，再运行其 README 中的构建/测试命令生成 Android 资源；不要直接修改压缩后的 JavaScript 文件。

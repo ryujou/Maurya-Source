@@ -36,7 +36,7 @@
     },
     "confidence": "owner-confirmed-and-cross-implemented",
     "evidence": [
-      "IOS_PORTING_MASTER_PLAN.md:117-143",
+      "ios/README.md:1-45",
       "android/app/src/main/java/com/example/peacock/feature/effects/EffectGeometry.kt:4-8",
       "esp32/lumia_esp32/components/lumia_runtime/include/lumia_geometry.h:11-24",
       "esp32/lumia_esp32/tests/host/test_led_strip_routing.c:69-129"

@@ -1,48 +1,20 @@
-# MauryaBluetooth
+# MauryaBluetooth 蓝牙传输
 
-Swift 6.2 CoreBluetooth central transport for the Maurya ESP32 GATT profile:
+这是 Swift 6 CoreBluetooth 中心设备传输层，对接 ESP32 的 Maurya GATT 配置：
 
-- service `FFE0`
-- write-with-response characteristic `FFE1`
-- notify/indicate characteristic `FFE2`
+- FFE0 服务
+- FFE1 写入（带响应）
+- FFE2 通知/指示
 
-The package depends on the sibling `MauryaProtocol` product through the local
-`../..` package. CoreBluetooth references stay on `MainActor`; the bounded
-transaction queue and incremental Modbus decoder live behind an actor. A pure
-state reducer rejects callbacks from stale connection generations.
+CoreBluetooth 对象和代理保持在 MainActor；有界事务队列、响应匹配和增量 Modbus 解码由 actor 保护。状态 reducer 通过连接代次拒绝旧回调，避免断线重连后把旧数据交给新会话。
 
-## Integration requirements
+## 运行规则
 
-The application target must provide `NSBluetoothAlwaysUsageDescription`.
-If background central behavior is approved by the Phase 0/App Review gate, it
-must also add `bluetooth-central` to `UIBackgroundModes`. Foreground scanning may
-use the Maurya name fallback because some firmware advertisements omit FFE0;
-background scans must specify FFE0.
+- 应用必须提供 NSBluetoothAlwaysUsageDescription。当前工程默认前台运行，不配置状态恢复或 bluetooth-central 后台模式。
+- 明确调用 close() 释放传输。用户主动断开不会自动重连；意外断开使用上限 45 秒的指数退避。
+- 只有服务发现、FFE1/FFE2 检查和通知订阅全部完成后才发出 ready。
+- 写入会按 negotiated maximumWriteValueLength 分片；收到通知后交给 Modbus 解码器和事务队列。
 
-State restoration is disabled by default. Supplying a restoration identifier
-without the `bluetooth-central` background mode is an invalid CoreBluetooth
-configuration and terminates the application; the foreground-only Maurya app
-therefore leaves the identifier `nil`.
+## 验证边界
 
-Call `close()` during explicit transport teardown. User-initiated disconnects do
-not reconnect; unexpected disconnects use capped exponential backoff up to 45
-seconds. `ready` is emitted only after service discovery, both characteristic
-checks, and confirmed FFE2 notification subscription.
-
-## Hardware Gate — not yet passed
-
-The package's pure and package-level tests do **not** prove physical BLE behavior.
-Gate P3 remains open until an iPhone and a real Maurya ESP32 demonstrate:
-
-- permission denial and Settings recovery;
-- Bluetooth off/on and device power loss during every connection phase;
-- 1,000 serialized requests with no deadlock or crossed response;
-- 20 Hz notification/frame traffic for at least 30 minutes;
-- write fragmentation using the negotiated `maximumWriteValueLength`;
-- lock-screen/background behavior under the approved entitlements;
-- two same-name devices remaining distinguishable by peripheral UUID;
-- Instruments/Memory Graph showing no retained peripheral, delegate, task, or
-  continuation leak.
-
-No simulator, mock, or macOS package test may be reported as satisfying this
-hardware gate.
+Swift 包测试覆盖状态机、广告匹配、队列、响应匹配、分片和重连算法，但不能替代真实 ESP32 的权限拒绝、掉电、1000 次串行请求、20 Hz 流量、后台行为和内存泄漏检查。

@@ -1,73 +1,32 @@
-# Physical iPad Pro validation — 2026-08-09
+# iPad Pro 真机验证记录（2026-08-09）
 
-## Device and build
+这份 README 对应一次历史真机记录，不是持续集成结果，也不替代新的发布验收。
 
-- Device: iPad Pro (11-inch) (4th generation), `iPad14,3`
-- OS: iPadOS 26.6 (`23G71`)
-- Architecture: arm64
-- App: Maurya 1.0 (1), Debug, automatic Personal Team signing
-- Scheme: `MauryaUI`
-- Xcode: 26.6 (`17F113`)
-- Test window observed by XCTest in landscape: 1389×970 points
+## 设备和构建
 
-The Personal Team identifier was supplied only as a command-line build setting
-and was not written to the project.
+- 设备：11 英寸 iPad Pro（第 4 代），型号 iPad14,3，iPadOS 26.6（23G71），arm64。
+- 应用：Maurya 1.0 (1) Debug，使用 Personal Team 临时签名；方案为 MauryaUI。
+- Xcode 26.6（17F113）；横屏 XCTest 窗口约 1389×970 点。
+- Team 标识只通过命令行传入，没有写入工程文件。
 
-## Final automated result
+## 结果
 
-Final physical-device run: **2 passed, 0 failed, 0 skipped**.
+最终 UI 真机运行 2 项通过、0 失败、0 跳过：
 
-- `testIPadProLandscapeKeepsSidebarAndMajorRoutesUsable`
-- `testScannerUnavailableRemainsRecoverableAcrossLandscapeAndLifecycle`
+- testIPadProLandscapeKeepsSidebarAndMajorRoutesUsable
+- testScannerUnavailableRemainsRecoverableAcrossLandscapeAndLifecycle
 
-The first test covered the regular-width split sidebar, real bundled role/group
-avatars, Effects → Editor ownership, software keyboard input, reachable Save,
-Analysis, Playback, Share, and fail-closed OTA. The second covered full-screen
-scanner unavailable/retry, Home/foreground recovery, and Cancel back to manual
-entry. Test fixtures explicitly keep BLE, server, and OTA success unavailable.
+测试覆盖横屏侧栏、角色/分组头像、Effects 到 Editor、键盘输入、Save、Analysis、Playback、Share 和 OTA 失败关闭状态；扫描不可用/重试、前后台恢复和取消返回手动输入。测试明确没有伪造 BLE、服务器或 OTA 成功。截图和 manifest 在 attachments/。
 
-The exported attachment manifest and three upright 2778×1940 physical-device
-screenshots are in `attachments/`.
+同一设备上的只读 BLE 检查发现 Maurya-2601，完成 GATT 服务发现、FFE1/FFE2 检查、通知订阅、设备快照和信息读取，并主动断开；报告固件 1.8.0、multilingual、地址 1 和 7 个灯组。没有执行任何写入、播放或 OTA。
 
-## Physical BLE result
+## 记录的修复
 
-Two additional read-only hardware checks passed on the same iPad and lamp:
+1. 使用 Xcode 完整开发目录，避免 Command Line Tools 缺少 Swift Testing。
+2. 把只构建应用和 UI 测试的 MauryaUI 方案与原组合方案分开。
+3. WKWebView 的 detach() 改为非观测式清理，避免 SwiftUI 图失效时的独占访问崩溃。
+4. 动态场景/组内模式标签改用 String.LocalizationValue，避免把本地化 key 原样显示。
 
-- discovery found `Maurya-2601` advertising at approximately -78 dBm;
-- connection reached the ready state, subscribed to the expected GATT
-  characteristics, and read the device snapshot plus device information;
-- the reported firmware is `1.8.0`, variant is `multilingual`, address is `1`,
-  and all seven lighting groups were present;
-- the test then explicitly disconnected.
+## 未覆盖内容
 
-The connection test passed in 12.449 seconds with 0 failures. It did not invoke
-Apply Scene, Apply Global LEDs, any group Apply action, Clear Diagnostics,
-Playback, or OTA. The final localized screenshot and attachment manifest are in
-`ble-connect-final/`; the discovery-only evidence is in `ble/`.
-
-## Issues found and resolved during the run
-
-1. The global developer directory pointed at CommandLineTools. It was changed to
-   `/Applications/Xcode.app/Contents/Developer` before the final run.
-2. The original combined `Maurya` scheme built unit tests and UI tests together.
-   On a physical device this changed local Swift-package linkage and launched an
-   app that referenced an unembedded `MauryaProtocol` product framework. The new
-   shared `MauryaUI` scheme builds only the app and UI-test runner.
-3. Leaving the WKWebView editor published `.terminated` synchronously from
-   `UIViewRepresentable.dismantleUIView`. Physical navigation exposed a Swift
-   exclusivity abort during SwiftUI graph invalidation. `detach()` now performs
-   non-observable teardown; a replacement coordinator still publishes its own
-   loading state.
-4. The first device snapshot rendered dynamically constructed localization keys
-   literally. Dynamic mode labels now resolve through `String.LocalizationValue`;
-   the final physical screenshot shows `Static` and `Steady` instead of raw keys.
-
-## Deliberately not claimed by this run
-
-- The physical ESP32 was discovered, connected, and read, but never written.
-- BLE writes, playback traffic, disconnect/reconnect fault injection, and
-  endurance behavior were not exercised.
-- Camera success was not simulated or claimed.
-- Microphone, motion, pressure/proximity, energy, VoiceOver, pointer, external
-  keyboard, Stage Manager resize, and OTA recovery remain separate manual or
-  hardware gates.
+本次没有验证 BLE 写入、播放流量、断线/重连注入、长时间运行、摄像头成功路径、麦克风/运动/能耗、VoiceOver、键盘/Stage Manager、OTA 恢复和 iOS↔Android 分享互通。这些仍需在真实设备和对应服务条件下单独验收。

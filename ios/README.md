@@ -1,82 +1,46 @@
-# Maurya iOS
+# iOS 源码
 
-This directory is the native iOS migration workspace described by
-[`../IOS_PORTING_MASTER_PLAN.md`](../IOS_PORTING_MASTER_PLAN.md).
+ios/ 包含 Maurya 的 SwiftUI 应用、协议核心和独立 Swift Package。应用目标面向 iOS 17，使用 Swift 6 严格并发；签名团队、配置文件和 IPA 不放在公开源码仓库中。
 
-## Current foundation
+## 目录
 
-The repository now contains a buildable unsigned SwiftUI application shell and
-several independently testable Swift 6.2 packages. Application identity and the
-iOS 17 deployment decision are recorded in
-[`ADR/0001-app-identity-and-deployment.md`](ADR/0001-app-identity-and-deployment.md).
-Signing team and distribution profiles remain intentionally unset.
+| 路径 | 内容 |
+| --- | --- |
+| Sources/MauryaProtocol | BLE UUID、二进制读写、Modbus CRC/帧、厂商 TLV、灯效和 BLE OTA 编解码 |
+| Packages/MauryaBluetooth | CoreBluetooth 中心设备传输、状态机、事务队列、通知解析和重连 |
+| Packages/MauryaDevice | 寄存器映射、设备信息、7 组运行时状态和 actor 仓库 |
+| Packages/MauryaEffects | Android 兼容的灯效数学、Blockly/Maurya Script 编译器、解释器和程序仓库 |
+| Packages/MauryaShare | 分享信封、规范 JSON/哈希、gzip、二维码、导入历史和本地审核 |
+| Packages/MauryaResources | 内置应援色、头像 WebP、用户颜色、备份和分享桥接 |
+| Packages/MauryaAnalysis | 16 kHz 音频分析、Core Motion 映射、输入新鲜度和前台提供器 |
+| Packages/MauryaEditor | 离线 WKWebView 编辑器、版本化桥接、自动保存和 Android 编辑器资源 |
+| Packages/MauryaPlayback | 10/20 Hz 灯效调度、心跳、确认、背压、重连和生命周期 |
+| Packages/MauryaOTA | 清单签名/哈希校验、BLE 分片、断点、提交和重连确认 |
+| App | SwiftUI 导航、设备控制、灯效/分享/OTA 页面、权限和本地化组合 |
 
-- `MauryaProtocol`: platform-independent BLE identifiers, binary I/O, Modbus
-  CRC/request/response codecs, bounded incremental response decoding, and
-  negotiated effect geometry. It also contains the generic vendor/TLV envelope,
-  volatile Effects commands, and BLE OTA request codecs.
-- `MauryaProtocolTests`: Swift Testing golden vectors and boundary tests.
-- `Packages/MauryaBluetooth`: CoreBluetooth transport, lifecycle state machine,
-  bounded transaction queue, notification decoding, and reconnect policy.
-- `Packages/MauryaDevice`: schema-limited register mapping, device information,
-  domain state, polling policy, and repository actor.
-- `Packages/MauryaEffects`: effect runtime values and algorithms plus the first
-  typed Blockly compiler/interpreter vertical slice.
-- `Packages/MauryaShare`: strict share envelope, canonical JSON/hash, bounded
-  gzip, token/URL validation, WebP structure checks, and local moderation.
-- `Packages/MauryaResources`: Android-mirrored character/group resources,
-  palette catalog, custom palette validation/storage, backup, and share bridge.
-- `Packages/MauryaAnalysis`: Android-aligned audio DSP, motion mapping, input
-  freshness aggregation, and conditional Apple audio/CoreMotion providers.
-- `Packages/MauryaEditor`: offline WKWebView editor host, strict versioned
-  bridge, autosave/recovery, and a hashed copy of the rebuilt Android editor.
-- `Packages/MauryaPlayback`: structured 10/20 Hz effect scheduler, heartbeat,
-  acknowledgement, backpressure, reconnect, lifecycle policy, and metrics.
-- `Packages/MauryaOTA`: secure OTA preflight, artifact verification, BLE
-  transfer/resume, checkpointing, commit, and post-reconnect confirmation.
-- `App`: unsigned SwiftUI app shell with typed navigation, design tokens,
-  localization, live BLE/device/share composition, and explicit states for
-  features that are still not integrated.
+## 42 颗灯和传输
 
-Protocol tests consume `../protocol/maurya-protocol.json` and
-`../protocol/golden-vectors.json` directly from the repository. They do not keep
-an iOS-private copy of cross-platform fixtures.
+协议默认几何为 7 组 × 6 颗 = 42 颗；没有能力信息时各端回退到这一几何。BLE 使用 FFE0 服务、FFE1 写入和 FFE2 通知；Modbus 和厂商帧的字节规则由 [protocol/README.md](../protocol/README.md) 与 maurya-protocol.json 统一定义。iOS 不在本目录复制另一份协议 JSON，测试直接读取仓库级 protocol/ 文件。
 
-The current hardware fallback is **7 groups with 6 pixels per group (42 total)**.
-New firmware may report another validated geometry, but an absent capability
-must resolve to that fallback.
+## 构建和测试
 
-## Requirements
+协议核心：
 
-- Swift 6.2 or newer (validated with Xcode 26.6 / Swift 6.3.3).
-- Full Xcode is required to build the application and generic iOS package
-  destinations. Physical CoreBluetooth/device tests require a signed build and
-  real hardware.
+~~~
+swift test --package-path ios
+~~~
 
-## Test
+应用项目位于 ios/App/Maurya.xcodeproj，可用 Xcode 26 或更新版本打开。无签名的通用构建示例：
 
-```sh
-cd ios
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun swift test
-```
+~~~
+xcodebuild -project ios/App/Maurya.xcodeproj \
+  -scheme Maurya \
+  -destination 'generic/platform=iOS' \
+  CODE_SIGNING_ALLOWED=NO build
+~~~
 
-The explicit developer directory is needed on the current development machine
-because its global `xcode-select` still points at Command Line Tools, whose
-standalone Swift invocation does not expose the Swift Testing module correctly.
+各独立包也可在对应目录运行 swift test；涉及 iOS SDK、Swift Testing 或真机 CoreBluetooth 的命令需要完整 Xcode。模拟器和纯单元测试不能代替真实 ESP32 的 BLE、吞吐、能耗、OTA 恢复和摄像头验证。
 
-## Xcode integration
+## 当前边界
 
-The app project is under `App/Maurya.xcodeproj`. Protocol, Bluetooth, Device,
-and Share are composed through dependency protocols and live adapters; unfinished
-features retain explicit unavailable states so they cannot masquerade as working
-data. Protocol source is not copied into the app target.
-
-The following remain outside this foundation and are required by later phases:
-
-- Signing team, provisioning, CI, OSLog, UI/snapshot tests, and release assets.
-- App composition of effects, resources, analysis, editor, playback, full share
-  workflow, and OTA.
-- Real-device BLE, 42-pixel routing, performance, energy, and recovery Gates.
-- Complete Blockly/Maurya Script language parity and analysis input providers.
-- Share networking, QR/UI, Universal Link E2E, history transactions, and WebP encoding.
-- OTA workflow UI, persistence, signed artifact service, and physical-device tests.
+应用已经包含设备扫描/连接、7 组控制、灯效编辑入口、二维码分享导入、资源浏览、分析和 OTA 的代码路径；需要生产分享服务、AASA/Associated Domains、签名 OTA 清单或实际硬件的部分会显示为未完成/不可用状态，不把测试替身当成线上成功。

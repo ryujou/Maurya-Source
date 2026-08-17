@@ -1,24 +1,14 @@
-# MauryaDevice
+# MauryaDevice 设备领域层
 
-Pure, Sendable device-domain models and register/runtime behavior for Phase 4.
-The package maps the Android and firmware schema for seven groups, parses device
-information/capabilities, limits every register request to the schema maximum of
-64 registers, and provides an actor-isolated repository over an injected async
-transport.
+本包只包含可 Sendable 的设备领域模型和寄存器/运行时行为，不包含 SwiftUI、CBPeripheral 或模拟硬件。应用在组合层把 MauryaBluetooth 适配为 DeviceTransport，测试使用确定性的协议传输。
 
-It intentionally contains no SwiftUI screen, no `CBPeripheral`, and no simulated
-hardware. The app may adapt `MauryaCentralTransport` to `DeviceTransport` at its
-composition boundary; tests use deterministic protocol transports only.
+## 实现内容
 
-## Hardware gate
+- 按协议映射 7 个灯组的全局场景、全局 LED、组内颜色/模式/参数和设备遥测。
+- 解析设备信息与能力，并将每次寄存器请求限制在协议允许的最大 64 个寄存器。
+- actor 隔离的设备仓库负责快照、轮询策略、读写排队、版本/连接状态和传输错误。
+- 领域层只返回结构化状态；页面决定如何显示加载、权限、断开、冲突和错误。
 
-Package tests and generic iOS builds validate only pure behavior. Gate P4 still
-requires a real Maurya ESP32 to verify seven-group read/write parity, disconnects
-during writes, queue behavior under fast slider input, telemetry values, and the
-UI/accessibility matrix. None of those hardware or UI checks are claimed here.
+## 测试边界
 
-The package currently passes Debug and Release builds with
-`-warnings-as-errors`, all Swift Testing suites, and a code-signing-disabled
-generic iOS 17 device build. The local shell's selected developer directory is
-Command Line Tools, so verification commands must set `DEVELOPER_DIR` to the
-installed Xcode without changing the machine-wide selection.
+包测试和通用 iOS 构建验证的是纯逻辑。7 组读写一致性、写入过程断开、快速滑块排队、遥测冲突和无障碍页面仍需要真实 Maurya ESP32 与 iPhone/iPad 验证。

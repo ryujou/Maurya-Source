@@ -1,113 +1,25 @@
-# MauryaAnalysis
+# MauryaAnalysis 音频与运动分析
 
-Swift 6 input and analysis layer for Maurya Phase 6. This package is the only
-filesystem scope of this slice and depends on the existing `MauryaEffects`
-package for the Android-compatible 22-key runtime schema.
+这是 iOS 端的输入和分析包，负责把音频、运动、压力和距离等输入整理成灯效运行时可消费的快照。包本身不保存或上传音频，也不修改应用的权限和后台配置。
 
-## Implemented
+## 实现内容
 
-- `AnalysisInputHub`, an actor that aggregates physical samples and per-key
-  virtual overrides into `Sendable` snapshots. Each sample carries a monotonic
-  timestamp, availability, permission state, and strict Android-compatible
-  `> 1,000 ms` stale semantics. Snapshot streams use bounded
-  `.bufferingNewest` storage and remove their continuation on cancellation.
-  While proximity or pressure remains actively registered, an existing valid
-  on-change sample receives a freshness lease on snapshot just like Android;
-  the hub never invents a value for a sensor that has not produced one. Light
-  remains unsupported and is never leased.
-- Pure 16 kHz mono/512-sample PCM analysis matching Android commit
-  `56709f15cc0173d2c8b28fad8db68b7f48396844`: Hann window, RMS, peak,
-  40–250 Hz bass, 250–2,000 Hz mid, 2,000–7,500 Hz treble, adaptive beat
-  threshold, 240 ms refractory period, eight-interval BPM, and 40–240 BPM
-  clamping. PCM is never persisted, uploaded, or logged.
-- Pure motion replay logic for normalized acceleration, motion, shake,
-  gyroscope, pitch/roll/yaw, heading wrapping, attitude zeroing, Core Motion
-  pressure conversion from kPa to Android hPa, and proximity mapping. The iOS
-  accelerometer reaction-force axes are negated to match the Android fixture's
-  gravity convention. Ambient light remains unavailable because public iOS
-  APIs expose no general lux sensor; proximity and barometric pressure are
-  subscribed only when required and remain overridable.
-- Conditional iOS providers for `AVAudioEngine` and `CMMotionManager`. They
-  subscribe only to required inputs, use bounded streams/ring storage, stop on
-  cancellation, and expose interruption/route loss as unavailable/stale data.
-  The audio tap uses the hardware's native noninterleaved Float32 format,
-  averages every channel to mono without allocating on the realtime callback,
-  and resamples on the analysis worker to 16 kHz. A route change removes the
-  old tap and automatically rebuilds the engine/resampler from the new native
-  format. Interruption recovery occurs only when `.shouldResume` is present and
-  the original session is still requested.
+- AnalysisInputHub 是 actor，聚合物理采样和每个运行时输入的虚拟覆盖值；每个样本带单调时间戳、可用性和权限状态，严格按超过 1000 ms 判定过期。
+- 音频分析固定为 16 kHz 单声道、512 样本窗口，包含 Hann 窗、RMS、峰值、低/中/高频段、节拍阈值、240 ms 抑制时间、8 个间隔的 BPM 和 40–240 BPM 限幅，与 Android 处理路径保持一致。
+- 运动回放覆盖加速度、摇动、陀螺仪、俯仰/横滚/偏航、航向归一化、姿态归零、气压换算和距离映射；环境光在公开 iOS API 下保持不可用。
+- AppleAudioInputProvider 使用 AVAudioEngine，按设备原生非交错 Float32 格式接收并混为单声道，再在分析线程重采样；路由变化、打断和取消会拆除旧 tap 并重建。
+- CoreMotionInputProvider 使用 CMMotionManager，只订阅当前灯效需要的输入；权限拒绝、路由丢失或打断会产生不可用/过期状态。
+- 固定容量 PCM 环形缓冲使用 OSAllocatedUnfairLock，音频回调抢不到锁时丢弃当前块，不等待 actor 或分析任务。
 
-The fixed-capacity realtime PCM ring stores its mutable state in
-`OSAllocatedUnfairLock`. Its audio-callback write uses `withLockIfAvailable`
-and drops that bounded chunk on contention, so the callback never waits for
-analysis or reaches actor-isolated state. Two private `@unchecked Sendable`
-pointer wrappers have a narrow synchronous lifetime: the lock closure neither
-stores nor returns AVAudioPCMBuffer-owned channel pointers.
+## 集成约束
 
-## Permissions and lifecycle contract
+应用必须提供 NSMicrophoneUsageDescription 和 NSMotionUsageDescription，并在用户明确开始音频响应灯效时才调用 start。页面离开、播放停止、权限变化或进入后台时要调用 stop；本包不承诺后台持续采样，也不自行添加 UIBackgroundModes。
 
-The App target now supplies the microphone/motion usage descriptions and owns
-these providers through its analysis service. The package itself still does
-not mutate plist or entitlement state. The integration must continue to obey:
+## 验证
 
-- Keep clear `NSMicrophoneUsageDescription` and `NSMotionUsageDescription`
-  strings. Starting capture without the microphone key crashes; the audio
-  provider requests permission only from its explicit `start()` call.
-- Use one app-level `CoreMotionInputProvider`/`CMMotionManager`. Call `stop()`
-  when playback stops, the owning page disappears, or required inputs change.
-- Do not activate audio at app launch. The provider activates only when an
-  audio-reactive effect starts and deactivates with
-  `.notifyOthersOnDeactivation`.
-- No continuous background operation is promised. Without an approved Phase 8
-  `audio` background-mode experiment, the app must stop these providers on
-  background entry. Adding `UIBackgroundModes=audio` requires a real user
-  setting, visible microphone state, energy disclosure, a disable control, and
-  App Review justification. Core Motion alone does not grant background CPU.
+~~~
+swift test --package-path ios/Packages/MauryaAnalysis -c debug
+swift test --package-path ios/Packages/MauryaAnalysis -c release
+~~~
 
-## Hardware, permission, and energy gates
-
-Package tests cover pure logic and do not close these gates. On physical iPhone
-hardware, verify all of the following before integration or release:
-
-1. Grant, deny, and revoke microphone/motion permission; confirm denied inputs
-   become unavailable/stale and virtual overrides still run effects.
-2. Replay recorded stationary, single-axis rotation, shake, and known-attitude
-   traces against Android, confirming axis signs on portrait/landscape devices.
-3. Test built-in mic, wired/USB input, Bluetooth HFP, route sampling-rate
-   changes, headset removal, phone-call/alarm interruption, and recommended vs
-   non-recommended resume paths. Confirm the old converter/tap is never reused.
-4. Run silence, sweep, impulse, pink-noise, clipped, and Android PCM/WAV golden
-   fixtures. Set tolerances from measured device results, not convenience.
-5. Run for 60 minutes while measuring ring occupancy, dropped samples, CPU,
-   memory, battery drain, thermal state, and UI/frame latency. Confirm stopping
-   removes the microphone indicator and sensor updates immediately.
-6. Only in Phase 8's separately approved background experiment: repeat locked
-   and backgrounded 30-minute runs, interruption and force-quit checks. Do not
-   turn those results into a guarantee of fixed-rate background execution.
-
-## Validation
-
-Warnings are errors for source and test targets. The local package dependency
-also uses `-warnings-as-errors`; Xcode 17 otherwise suppresses dependency
-warnings, so the generic build explicitly disables that suppression.
-
-```sh
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
-  swift test --package-path ios/Packages/MauryaAnalysis -c debug
-
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
-  swift test --package-path ios/Packages/MauryaAnalysis -c release
-
-cd ios/Packages/MauryaAnalysis
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
-  xcodebuild -scheme MauryaAnalysis -configuration Debug \
-    -destination 'generic/platform=iOS' \
-    -derivedDataPath /tmp/maurya-analysis-debug \
-    CODE_SIGNING_ALLOWED=NO SWIFT_SUPPRESS_WARNINGS=NO build
-
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
-  xcodebuild -scheme MauryaAnalysis -configuration Release \
-    -destination 'generic/platform=iOS' \
-    -derivedDataPath /tmp/maurya-analysis-release \
-    CODE_SIGNING_ALLOWED=NO SWIFT_SUPPRESS_WARNINGS=NO build
-```
+包测试覆盖纯分析、环形缓冲、输入新鲜度和运动映射；真实麦克风、蓝牙音频路由、电话打断、能耗、温度和长时间运行仍需在实体 iPhone 上验证。

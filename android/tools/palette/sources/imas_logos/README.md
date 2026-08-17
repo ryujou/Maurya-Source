@@ -1,15 +1,13 @@
-# THE IDOLM@STER project logos
+# THE IDOLM@STER 标识素材
 
-These files are used only to identify projects in the unofficial Maurya support-light controller. Their inclusion does not imply affiliation with or endorsement by Bandai Namco Entertainment.
+本目录保存应援色目录使用的企划标识源图和来源记录。素材只用于非官方的本地灯控界面；收录不表示与 Bandai Namco Entertainment 存在隶属、授权或背书关系。
 
-`manifest.json` is the source of truth for each original URL, retrieval date, source SHA-256, generated PNG SHA-256, and license/trademark note. Run the following commands from the repository root to reproduce the 320 x 160 transparent derivatives used by the Android app:
+manifest.json 是每个素材的来源 URL、抓取日期、源文件 SHA-256、生成 PNG SHA-256 以及许可/商标备注的唯一记录。需要重新生成 Android 使用的 320×160 透明图时，在 android/ 目录运行对应的素材脚本：
 
-```powershell
+~~~
 python tools/palette/fetch_imas_logos.py
 python tools/palette/crawl_imas.py
 python tools/palette/build_catalog.py
-```
+~~~
 
-The Wikimedia Commons file pages identify the selected simple wordmarks as `PD-textlogo`; trademark restrictions may still apply. The Shiny Colors and vα-liv assets come from their official project pages and remain copyrighted/trademarked by their respective owners.
-
-No logo is recolored, stretched, or cropped. The pipeline only scales each source proportionally and centers it with transparent padding.
+处理流程只按比例缩放并居中留透明边，不改色、不拉伸、不裁切。来源页中的公共领域文字标识说明不等于商标使用许可，分发前仍需自行确认权利范围。
