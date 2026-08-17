@@ -5,12 +5,14 @@ on:
     paths:
       - "ios/**"
       - "protocol/**"
+      - "IOS_PORTING_MASTER_PLAN.md"
       - ".github/workflows/ios-foundation.yml"
   push:
     branches: [main]
     paths:
       - "ios/**"
       - "protocol/**"
+      - "IOS_PORTING_MASTER_PLAN.md"
       - ".github/workflows/ios-foundation.yml"
 
 permissions:
