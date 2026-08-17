@@ -1,0 +1,38 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "NSBluetoothAlwaysUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Maurya uses Bluetooth to find and control your nearby Maurya lighting device." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Maurya は近くの Maurya ライトデバイスを検出して操作するために Bluetooth を使用します。" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Maurya 使用蓝牙来查找并控制附近的 Maurya 灯光设备。" } }
+      }
+    },
+    "NSCameraUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Maurya uses the camera only while you scan a Maurya temporary-share QR code." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Maurya は一時共有用 QR コードを読み取る間だけカメラを使用します。" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Maurya 仅在你扫描临时分享二维码时使用相机。" } }
+      }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Maurya analyzes live audio only while you run an audio-reactive effect. Audio is not saved or uploaded." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Maurya は音声連動エフェクトの実行中だけ音声を解析します。音声を保存または送信することはありません。" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Maurya 仅在运行音频响应效果时分析实时声音；音频不会被保存或上传。" } }
+      }
+    },
+    "NSMotionUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Maurya reads motion only while you run a motion-reactive effect." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Maurya はモーション連動エフェクトの実行中だけモーションデータを読み取ります。" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Maurya 仅在运行运动响应效果时读取运动数据。" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
