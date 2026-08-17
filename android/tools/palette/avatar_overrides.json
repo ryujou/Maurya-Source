@@ -1,0 +1,2377 @@
+{
+  "bangdream_char_001": {
+    "centerXRatio": 0.51101,
+    "centerYRatio": 0.526156,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_002": {
+    "centerXRatio": 0.472909,
+    "centerYRatio": 0.562983,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_003": {
+    "centerXRatio": 0.52355,
+    "centerYRatio": 0.560167,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_004": {
+    "centerXRatio": 0.405826,
+    "centerYRatio": 0.517305,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_005": {
+    "centerXRatio": 0.468761,
+    "centerYRatio": 0.501405,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_006": {
+    "centerXRatio": 0.414274,
+    "centerYRatio": 0.519641,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_007": {
+    "centerXRatio": 0.482975,
+    "centerYRatio": 0.550418,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_008": {
+    "centerXRatio": 0.510184,
+    "centerYRatio": 0.510551,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_009": {
+    "centerXRatio": 0.501617,
+    "centerYRatio": 0.522152,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_010": {
+    "centerXRatio": 0.517174,
+    "centerYRatio": 0.594973,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_011": {
+    "centerXRatio": 0.397683,
+    "centerYRatio": 0.579977,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_012": {
+    "centerXRatio": 0.44919,
+    "centerYRatio": 0.521472,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_013": {
+    "centerXRatio": 0.575267,
+    "centerYRatio": 0.579896,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_014": {
+    "centerXRatio": 0.58738,
+    "centerYRatio": 0.55726,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_015": {
+    "centerXRatio": 0.515608,
+    "centerYRatio": 0.524928,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_016": {
+    "centerXRatio": 0.551873,
+    "centerYRatio": 0.433435,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_017": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.5,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_018": {
+    "centerXRatio": 0.477227,
+    "centerYRatio": 0.498586,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_019": {
+    "centerXRatio": 0.483833,
+    "centerYRatio": 0.444822,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_020": {
+    "centerXRatio": 0.539861,
+    "centerYRatio": 0.542841,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_021": {
+    "centerXRatio": 0.453261,
+    "centerYRatio": 0.608694,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_022": {
+    "centerXRatio": 0.644459,
+    "centerYRatio": 0.553603,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_023": {
+    "centerXRatio": 0.479456,
+    "centerYRatio": 0.597516,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_024": {
+    "centerXRatio": 0.486671,
+    "centerYRatio": 0.564198,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_025": {
+    "centerXRatio": 0.470331,
+    "centerYRatio": 0.568715,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_026": {
+    "centerXRatio": 0.383484,
+    "centerYRatio": 0.424463,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_027": {
+    "centerXRatio": 0.511172,
+    "centerYRatio": 0.514248,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_028": {
+    "centerXRatio": 0.418097,
+    "centerYRatio": 0.55862,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_029": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.5,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_030": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.5,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_031": {
+    "centerXRatio": 0.436872,
+    "centerYRatio": 0.489126,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_032": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.5,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_033": {
+    "centerXRatio": 0.506327,
+    "centerYRatio": 0.518274,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_034": {
+    "centerXRatio": 0.517321,
+    "centerYRatio": 0.5732,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_035": {
+    "centerXRatio": 0.405046,
+    "centerYRatio": 0.547365,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_036": {
+    "centerXRatio": 0.525071,
+    "centerYRatio": 0.670208,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_037": {
+    "centerXRatio": 0.49934,
+    "centerYRatio": 0.514383,
+    "sideRatio": 0.78
+  },
+  "bangdream_char_038": {
+    "centerXRatio": 0.579781,
+    "centerYRatio": 0.45257,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_039": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.513539,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_040": {
+    "centerXRatio": 0.450788,
+    "centerYRatio": 0.508456,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_041": {
+    "centerXRatio": 0.457885,
+    "centerYRatio": 0.487614,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_042": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.5,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_043": {
+    "centerXRatio": 0.453169,
+    "centerYRatio": 0.514403,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_044": {
+    "centerXRatio": 0.491403,
+    "centerYRatio": 0.646221,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_045": {
+    "centerXRatio": 0.4843,
+    "centerYRatio": 0.537259,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_046": {
+    "centerXRatio": 0.500945,
+    "centerYRatio": 0.504804,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_047": {
+    "centerXRatio": 0.431244,
+    "centerYRatio": 0.5192,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_048": {
+    "centerXRatio": 0.502959,
+    "centerYRatio": 0.539528,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_049": {
+    "centerXRatio": 0.461862,
+    "centerYRatio": 0.524869,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_050": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.5,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_051": {
+    "centerXRatio": 0.505333,
+    "centerYRatio": 0.566684,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_052": {
+    "centerXRatio": 0.475585,
+    "centerYRatio": 0.421475,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_053": {
+    "centerXRatio": 0.528382,
+    "centerYRatio": 0.473343,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_054": {
+    "centerXRatio": 0.498016,
+    "centerYRatio": 0.563875,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_055": {
+    "centerXRatio": 0.48,
+    "centerYRatio": 0.525726,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_056": {
+    "centerXRatio": 0.509723,
+    "centerYRatio": 0.574745,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_057": {
+    "centerXRatio": 0.511537,
+    "centerYRatio": 0.563229,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_058": {
+    "centerXRatio": 0.548858,
+    "centerYRatio": 0.55863,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_059": {
+    "centerXRatio": 0.501552,
+    "centerYRatio": 0.508508,
+    "sideRatio": 0.6
+  },
+  "bangdream_char_060": {
+    "centerXRatio": 0.457849,
+    "centerYRatio": 0.599347,
+    "sideRatio": 0.6
+  },
+  "imas_char_10001": {
+    "centerXRatio": 0.353846,
+    "centerYRatio": 0.341026,
+    "sideRatio": 0.6
+  },
+  "imas_char_10002": {
+    "centerXRatio": 0.433412,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10003": {
+    "centerXRatio": 0.596154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10004": {
+    "centerXRatio": 0.663462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10005": {
+    "centerXRatio": 0.527186,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10006": {
+    "centerXRatio": 0.439895,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10007": {
+    "centerXRatio": 0.335826,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10008": {
+    "centerXRatio": 0.555769,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_10009": {
+    "centerXRatio": 0.465362,
+    "centerYRatio": 0.312866,
+    "sideRatio": 0.6
+  },
+  "imas_char_10010": {
+    "centerXRatio": 0.375535,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10011": {
+    "centerXRatio": 0.608577,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10012": {
+    "centerXRatio": 0.521154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_10013": {
+    "centerXRatio": 0.313297,
+    "centerYRatio": 0.339818,
+    "sideRatio": 0.6
+  },
+  "imas_char_20001": {
+    "centerXRatio": 0.484031,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20002": {
+    "centerXRatio": 0.552278,
+    "centerYRatio": 0.360849,
+    "sideRatio": 0.6
+  },
+  "imas_char_20003": {
+    "centerXRatio": 0.469231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20004": {
+    "centerXRatio": 0.453846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20005": {
+    "centerXRatio": 0.434615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20006": {
+    "centerXRatio": 0.482792,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20007": {
+    "centerXRatio": 0.526923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20008": {
+    "centerXRatio": 0.480769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20009": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20010": {
+    "centerXRatio": 0.403846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20011": {
+    "centerXRatio": 0.355769,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_20012": {
+    "centerXRatio": 0.448077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20013": {
+    "centerXRatio": 0.494231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20014": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20015": {
+    "centerXRatio": 0.35,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20016": {
+    "centerXRatio": 0.549699,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20017": {
+    "centerXRatio": 0.388462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20018": {
+    "centerXRatio": 0.369663,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20019": {
+    "centerXRatio": 0.421154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20020": {
+    "centerXRatio": 0.546154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20021": {
+    "centerXRatio": 0.541288,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20022": {
+    "centerXRatio": 0.309615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20023": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20024": {
+    "centerXRatio": 0.355769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20025": {
+    "centerXRatio": 0.504637,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20026": {
+    "centerXRatio": 0.425012,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20027": {
+    "centerXRatio": 0.338462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20028": {
+    "centerXRatio": 0.366145,
+    "centerYRatio": 0.349191,
+    "sideRatio": 0.6
+  },
+  "imas_char_20029": {
+    "centerXRatio": 0.382692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20030": {
+    "centerXRatio": 0.540385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20031": {
+    "centerXRatio": 0.370441,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20032": {
+    "centerXRatio": 0.376923,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_20033": {
+    "centerXRatio": 0.448077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20034": {
+    "centerXRatio": 0.398077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20035": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20036": {
+    "centerXRatio": 0.34247,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20037": {
+    "centerXRatio": 0.311538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20038": {
+    "centerXRatio": 0.361538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20039": {
+    "centerXRatio": 0.375543,
+    "centerYRatio": 0.373858,
+    "sideRatio": 0.6
+  },
+  "imas_char_20040": {
+    "centerXRatio": 0.514842,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20041": {
+    "centerXRatio": 0.461538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20042": {
+    "centerXRatio": 0.539536,
+    "centerYRatio": 0.316858,
+    "sideRatio": 0.6
+  },
+  "imas_char_20043": {
+    "centerXRatio": 0.305073,
+    "centerYRatio": 0.326125,
+    "sideRatio": 0.6
+  },
+  "imas_char_20044": {
+    "centerXRatio": 0.513462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20045": {
+    "centerXRatio": 0.532692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20046": {
+    "centerXRatio": 0.473077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20047": {
+    "centerXRatio": 0.536538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20048": {
+    "centerXRatio": 0.556619,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20049": {
+    "centerXRatio": 0.363462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20050": {
+    "centerXRatio": 0.511538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20051": {
+    "centerXRatio": 0.378846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20052": {
+    "centerXRatio": 0.53821,
+    "centerYRatio": 0.357579,
+    "sideRatio": 0.6
+  },
+  "imas_char_20053": {
+    "centerXRatio": 0.553846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20054": {
+    "centerXRatio": 0.413462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20055": {
+    "centerXRatio": 0.480769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20056": {
+    "centerXRatio": 0.484615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20057": {
+    "centerXRatio": 0.486538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20058": {
+    "centerXRatio": 0.492308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20059": {
+    "centerXRatio": 0.430769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20060": {
+    "centerXRatio": 0.225,
+    "centerYRatio": 0.306838,
+    "sideRatio": 0.6
+  },
+  "imas_char_20061": {
+    "centerXRatio": 0.519981,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20062": {
+    "centerXRatio": 0.521154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20063": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20064": {
+    "centerXRatio": 0.401923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20065": {
+    "centerXRatio": 0.378846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20066": {
+    "centerXRatio": 0.479126,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20067": {
+    "centerXRatio": 0.538462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20068": {
+    "centerXRatio": 0.548121,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20069": {
+    "centerXRatio": 0.309615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20070": {
+    "centerXRatio": 0.521287,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20071": {
+    "centerXRatio": 0.465385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20072": {
+    "centerXRatio": 0.534615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20073": {
+    "centerXRatio": 0.526923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20074": {
+    "centerXRatio": 0.540385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20075": {
+    "centerXRatio": 0.503846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20076": {
+    "centerXRatio": 0.441827,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20077": {
+    "centerXRatio": 0.554327,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20078": {
+    "centerXRatio": 0.513462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20079": {
+    "centerXRatio": 0.398077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20080": {
+    "centerXRatio": 0.375709,
+    "centerYRatio": 0.396643,
+    "sideRatio": 0.6
+  },
+  "imas_char_20081": {
+    "centerXRatio": 0.413082,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20082": {
+    "centerXRatio": 0.561538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20083": {
+    "centerXRatio": 0.509615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20084": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20085": {
+    "centerXRatio": 0.369231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20086": {
+    "centerXRatio": 0.367308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20087": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20088": {
+    "centerXRatio": 0.502655,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20089": {
+    "centerXRatio": 0.517308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20090": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20091": {
+    "centerXRatio": 0.45,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20092": {
+    "centerXRatio": 0.475,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20093": {
+    "centerXRatio": 0.338462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20094": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20095": {
+    "centerXRatio": 0.359684,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20096": {
+    "centerXRatio": 0.290593,
+    "centerYRatio": 0.392783,
+    "sideRatio": 0.6
+  },
+  "imas_char_20097": {
+    "centerXRatio": 0.392308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20098": {
+    "centerXRatio": 0.526923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20099": {
+    "centerXRatio": 0.413462,
+    "centerYRatio": 0.306838,
+    "sideRatio": 0.6
+  },
+  "imas_char_20100": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20101": {
+    "centerXRatio": 0.517308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20102": {
+    "centerXRatio": 0.494231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20103": {
+    "centerXRatio": 0.436538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20104": {
+    "centerXRatio": 0.462673,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20105": {
+    "centerXRatio": 0.355769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20106": {
+    "centerXRatio": 0.378381,
+    "centerYRatio": 0.376257,
+    "sideRatio": 0.6
+  },
+  "imas_char_20107": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20108": {
+    "centerXRatio": 0.513965,
+    "centerYRatio": 0.313863,
+    "sideRatio": 0.6
+  },
+  "imas_char_20109": {
+    "centerXRatio": 0.538462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20110": {
+    "centerXRatio": 0.396154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20111": {
+    "centerXRatio": 0.367421,
+    "centerYRatio": 0.386043,
+    "sideRatio": 0.6
+  },
+  "imas_char_20112": {
+    "centerXRatio": 0.461538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20113": {
+    "centerXRatio": 0.396154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20114": {
+    "centerXRatio": 0.503846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20115": {
+    "centerXRatio": 0.501923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20116": {
+    "centerXRatio": 0.452404,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20117": {
+    "centerXRatio": 0.393061,
+    "centerYRatio": 0.335483,
+    "sideRatio": 0.6
+  },
+  "imas_char_20118": {
+    "centerXRatio": 0.462376,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20119": {
+    "centerXRatio": 0.433016,
+    "centerYRatio": 0.33983,
+    "sideRatio": 0.6
+  },
+  "imas_char_20120": {
+    "centerXRatio": 0.459615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20121": {
+    "centerXRatio": 0.534615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20122": {
+    "centerXRatio": 0.398077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20123": {
+    "centerXRatio": 0.374099,
+    "centerYRatio": 0.314961,
+    "sideRatio": 0.6
+  },
+  "imas_char_20124": {
+    "centerXRatio": 0.253846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20125": {
+    "centerXRatio": 0.386538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20126": {
+    "centerXRatio": 0.542308,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_20127": {
+    "centerXRatio": 0.465385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20128": {
+    "centerXRatio": 0.428846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20129": {
+    "centerXRatio": 0.546154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20130": {
+    "centerXRatio": 0.580288,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20131": {
+    "centerXRatio": 0.534315,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20132": {
+    "centerXRatio": 0.501028,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20133": {
+    "centerXRatio": 0.49752,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20134": {
+    "centerXRatio": 0.49912,
+    "centerYRatio": 0.304329,
+    "sideRatio": 0.6
+  },
+  "imas_char_20135": {
+    "centerXRatio": 0.461797,
+    "centerYRatio": 0.311424,
+    "sideRatio": 0.6
+  },
+  "imas_char_20136": {
+    "centerXRatio": 0.416827,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20137": {
+    "centerXRatio": 0.45,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20138": {
+    "centerXRatio": 0.475,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20139": {
+    "centerXRatio": 0.553476,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20140": {
+    "centerXRatio": 0.519231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20141": {
+    "centerXRatio": 0.507692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20142": {
+    "centerXRatio": 0.309135,
+    "centerYRatio": 0.320513,
+    "sideRatio": 0.6
+  },
+  "imas_char_20143": {
+    "centerXRatio": 0.511538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20144": {
+    "centerXRatio": 0.480769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20145": {
+    "centerXRatio": 0.417308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20146": {
+    "centerXRatio": 0.513462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20147": {
+    "centerXRatio": 0.553846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20148": {
+    "centerXRatio": 0.373772,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20149": {
+    "centerXRatio": 0.504393,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20150": {
+    "centerXRatio": 0.471154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20151": {
+    "centerXRatio": 0.526923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20152": {
+    "centerXRatio": 0.493862,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20153": {
+    "centerXRatio": 0.431448,
+    "centerYRatio": 0.319192,
+    "sideRatio": 0.6
+  },
+  "imas_char_20154": {
+    "centerXRatio": 0.328846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20155": {
+    "centerXRatio": 0.338462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20156": {
+    "centerXRatio": 0.436538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20157": {
+    "centerXRatio": 0.378336,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20158": {
+    "centerXRatio": 0.454414,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20159": {
+    "centerXRatio": 0.507692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20160": {
+    "centerXRatio": 0.473355,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20161": {
+    "centerXRatio": 0.323873,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20162": {
+    "centerXRatio": 0.542308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20163": {
+    "centerXRatio": 0.403846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20164": {
+    "centerXRatio": 0.521154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20165": {
+    "centerXRatio": 0.466797,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20166": {
+    "centerXRatio": 0.501354,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20167": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20168": {
+    "centerXRatio": 0.473077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20169": {
+    "centerXRatio": 0.364995,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20170": {
+    "centerXRatio": 0.506532,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20171": {
+    "centerXRatio": 0.469231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20172": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20173": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20174": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20175": {
+    "centerXRatio": 0.442308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20176": {
+    "centerXRatio": 0.428365,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20177": {
+    "centerXRatio": 0.326468,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20178": {
+    "centerXRatio": 0.390385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20179": {
+    "centerXRatio": 0.445302,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20180": {
+    "centerXRatio": 0.563362,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20181": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20182": {
+    "centerXRatio": 0.275,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20183": {
+    "centerXRatio": 0.546154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20184": {
+    "centerXRatio": 0.424889,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20185": {
+    "centerXRatio": 0.525,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20186": {
+    "centerXRatio": 0.548077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20187": {
+    "centerXRatio": 0.484975,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20188": {
+    "centerXRatio": 0.475304,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20189": {
+    "centerXRatio": 0.532692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_20190": {
+    "centerXRatio": 0.511538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_210001": {
+    "centerXRatio": 0.280769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_210002": {
+    "centerXRatio": 0.275481,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_210003": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_210004": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_210005": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_220001": {
+    "centerXRatio": 0.246154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_230001": {
+    "centerXRatio": 0.333173,
+    "centerYRatio": 0.306838,
+    "sideRatio": 0.6
+  },
+  "imas_char_250001": {
+    "centerXRatio": 0.259615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_250002": {
+    "centerXRatio": 0.405769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_250003": {
+    "centerXRatio": 0.642308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30001": {
+    "centerXRatio": 0.490749,
+    "centerYRatio": 0.31999,
+    "sideRatio": 0.6
+  },
+  "imas_char_30002": {
+    "centerXRatio": 0.603846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30003": {
+    "centerXRatio": 0.389774,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30004": {
+    "centerXRatio": 0.515385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30005": {
+    "centerXRatio": 0.458616,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30006": {
+    "centerXRatio": 0.230275,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30007": {
+    "centerXRatio": 0.509615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30008": {
+    "centerXRatio": 0.453399,
+    "centerYRatio": 0.334514,
+    "sideRatio": 0.6
+  },
+  "imas_char_30009": {
+    "centerXRatio": 0.548077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30010": {
+    "centerXRatio": 0.617308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30011": {
+    "centerXRatio": 0.570704,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30012": {
+    "centerXRatio": 0.512723,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30013": {
+    "centerXRatio": 0.513462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30014": {
+    "centerXRatio": 0.332692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30015": {
+    "centerXRatio": 0.416321,
+    "centerYRatio": 0.31828,
+    "sideRatio": 0.6
+  },
+  "imas_char_30016": {
+    "centerXRatio": 0.644876,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30017": {
+    "centerXRatio": 0.524021,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30018": {
+    "centerXRatio": 0.492308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30019": {
+    "centerXRatio": 0.524028,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30020": {
+    "centerXRatio": 0.25,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30021": {
+    "centerXRatio": 0.4,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30022": {
+    "centerXRatio": 0.628846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30023": {
+    "centerXRatio": 0.392568,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_30024": {
+    "centerXRatio": 0.523077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30025": {
+    "centerXRatio": 0.538462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30026": {
+    "centerXRatio": 0.594277,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30027": {
+    "centerXRatio": 0.615865,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30028": {
+    "centerXRatio": 0.684492,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30029": {
+    "centerXRatio": 0.688607,
+    "centerYRatio": 0.304615,
+    "sideRatio": 0.6
+  },
+  "imas_char_30030": {
+    "centerXRatio": 0.335306,
+    "centerYRatio": 0.324468,
+    "sideRatio": 0.6
+  },
+  "imas_char_30031": {
+    "centerXRatio": 0.568297,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30032": {
+    "centerXRatio": 0.529604,
+    "centerYRatio": 0.336684,
+    "sideRatio": 0.6
+  },
+  "imas_char_30033": {
+    "centerXRatio": 0.367943,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30034": {
+    "centerXRatio": 0.655769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30035": {
+    "centerXRatio": 0.405769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30036": {
+    "centerXRatio": 0.66663,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30037": {
+    "centerXRatio": 0.601923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30038": {
+    "centerXRatio": 0.502053,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_30039": {
+    "centerXRatio": 0.513462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40001": {
+    "centerXRatio": 0.528552,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40002": {
+    "centerXRatio": 0.65,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40003": {
+    "centerXRatio": 0.705372,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40004": {
+    "centerXRatio": 0.603846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40005": {
+    "centerXRatio": 0.594231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40006": {
+    "centerXRatio": 0.272923,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_40008": {
+    "centerXRatio": 0.267308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40009": {
+    "centerXRatio": 0.401589,
+    "centerYRatio": 0.45,
+    "sideRatio": 0.9
+  },
+  "imas_char_40010": {
+    "centerXRatio": 0.344231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40011": {
+    "centerXRatio": 0.370165,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40012": {
+    "centerXRatio": 0.560096,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40013": {
+    "centerXRatio": 0.394943,
+    "centerYRatio": 0.360438,
+    "sideRatio": 0.6
+  },
+  "imas_char_40014": {
+    "centerXRatio": 0.354245,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40015": {
+    "centerXRatio": 0.732692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40016": {
+    "centerXRatio": 0.400476,
+    "centerYRatio": 0.317036,
+    "sideRatio": 0.6
+  },
+  "imas_char_40017": {
+    "centerXRatio": 0.457692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40018": {
+    "centerXRatio": 0.642308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40019": {
+    "centerXRatio": 0.281029,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40020": {
+    "centerXRatio": 0.527016,
+    "centerYRatio": 0.436479,
+    "sideRatio": 0.6
+  },
+  "imas_char_40021": {
+    "centerXRatio": 0.292308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40022": {
+    "centerXRatio": 0.292308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40023": {
+    "centerXRatio": 0.461538,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40024": {
+    "centerXRatio": 0.517308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40025": {
+    "centerXRatio": 0.661538,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_40026": {
+    "centerXRatio": 0.403846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40027": {
+    "centerXRatio": 0.22052,
+    "centerYRatio": 0.341581,
+    "sideRatio": 0.6
+  },
+  "imas_char_40028": {
+    "centerXRatio": 0.661538,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_40029": {
+    "centerXRatio": 0.326923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40030": {
+    "centerXRatio": 0.549519,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40031": {
+    "centerXRatio": 0.411562,
+    "centerYRatio": 0.360768,
+    "sideRatio": 0.6
+  },
+  "imas_char_40032": {
+    "centerXRatio": 0.584615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40033": {
+    "centerXRatio": 0.388462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40034": {
+    "centerXRatio": 0.638462,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40035": {
+    "centerXRatio": 0.340385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40036": {
+    "centerXRatio": 0.239904,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40037": {
+    "centerXRatio": 0.534615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40038": {
+    "centerXRatio": 0.467308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40039": {
+    "centerXRatio": 0.375,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40040": {
+    "centerXRatio": 0.491827,
+    "centerYRatio": 0.418445,
+    "sideRatio": 0.6
+  },
+  "imas_char_40041": {
+    "centerXRatio": 0.384615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40042": {
+    "centerXRatio": 0.369231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40043": {
+    "centerXRatio": 0.549241,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40044": {
+    "centerXRatio": 0.544231,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40045": {
+    "centerXRatio": 0.698077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_40046": {
+    "centerXRatio": 0.555769,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50001": {
+    "centerXRatio": 0.16875,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50002": {
+    "centerXRatio": 0.415385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50003": {
+    "centerXRatio": 0.257692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50004": {
+    "centerXRatio": 0.83125,
+    "centerYRatio": 0.520133,
+    "sideRatio": 0.6
+  },
+  "imas_char_50005": {
+    "centerXRatio": 0.448077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50006": {
+    "centerXRatio": 0.573077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50007": {
+    "centerXRatio": 0.482692,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50008": {
+    "centerXRatio": 0.540385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50009": {
+    "centerXRatio": 0.398077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50010": {
+    "centerXRatio": 0.323077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50011": {
+    "centerXRatio": 0.589617,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50012": {
+    "centerXRatio": 0.205288,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50013": {
+    "centerXRatio": 0.696154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50014": {
+    "centerXRatio": 0.615385,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50015": {
+    "centerXRatio": 0.251923,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50016": {
+    "centerXRatio": 0.690226,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50017": {
+    "centerXRatio": 0.634615,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50018": {
+    "centerXRatio": 0.318009,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50019": {
+    "centerXRatio": 0.16875,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50020": {
+    "centerXRatio": 0.253846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50021": {
+    "centerXRatio": 0.317308,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50022": {
+    "centerXRatio": 0.353846,
+    "centerYRatio": 0.303419,
+    "sideRatio": 0.6
+  },
+  "imas_char_50023": {
+    "centerXRatio": 0.825,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50024": {
+    "centerXRatio": 0.757902,
+    "centerYRatio": 0.315,
+    "sideRatio": 0.63
+  },
+  "imas_char_50025": {
+    "centerXRatio": 0.169021,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50026": {
+    "centerXRatio": 0.271154,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50027": {
+    "centerXRatio": 0.216803,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_50028": {
+    "centerXRatio": 0.698077,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_60001": {
+    "centerXRatio": 0.492789,
+    "centerYRatio": 0.350457,
+    "sideRatio": 0.6
+  },
+  "imas_char_60002": {
+    "centerXRatio": 0.446635,
+    "centerYRatio": 0.32735,
+    "sideRatio": 0.6
+  },
+  "imas_char_60003": {
+    "centerXRatio": 0.435564,
+    "centerYRatio": 0.361153,
+    "sideRatio": 0.6
+  },
+  "imas_char_60004": {
+    "centerXRatio": 0.546573,
+    "centerYRatio": 0.353013,
+    "sideRatio": 0.6
+  },
+  "imas_char_60005": {
+    "centerXRatio": 0.452493,
+    "centerYRatio": 0.310256,
+    "sideRatio": 0.6
+  },
+  "imas_char_60006": {
+    "centerXRatio": 0.60387,
+    "centerYRatio": 0.31462,
+    "sideRatio": 0.6
+  },
+  "imas_char_60007": {
+    "centerXRatio": 0.475165,
+    "centerYRatio": 0.340149,
+    "sideRatio": 0.6
+  },
+  "imas_char_60008": {
+    "centerXRatio": 0.472409,
+    "centerYRatio": 0.36544,
+    "sideRatio": 0.6
+  },
+  "imas_char_60009": {
+    "centerXRatio": 0.514086,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_60010": {
+    "centerXRatio": 0.516504,
+    "centerYRatio": 0.370042,
+    "sideRatio": 0.6
+  },
+  "imas_char_60011": {
+    "centerXRatio": 0.498675,
+    "centerYRatio": 0.339938,
+    "sideRatio": 0.6
+  },
+  "imas_char_60012": {
+    "centerXRatio": 0.503846,
+    "centerYRatio": 0.3,
+    "sideRatio": 0.6
+  },
+  "imas_char_60013": {
+    "centerXRatio": 0.539993,
+    "centerYRatio": 0.35878,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_0312c3ab4c0e": {
+    "centerXRatio": 0.551852,
+    "centerYRatio": 0.224675,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_090c932c5628": {
+    "centerXRatio": 0.692593,
+    "centerYRatio": 0.184932,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_0df5084ad5ca": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.184932,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_12408a5b2dc9": {
+    "centerXRatio": 0.453704,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_1baf9d3792d2": {
+    "centerXRatio": 0.507407,
+    "centerYRatio": 0.237662,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_1cf1ece216b7": {
+    "centerXRatio": 0.496296,
+    "centerYRatio": 0.212987,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_1e1f7344d051": {
+    "centerXRatio": 0.503704,
+    "centerYRatio": 0.190526,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_1f5b2f27305e": {
+    "centerXRatio": 0.551852,
+    "centerYRatio": 0.190588,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_2224e48268d1": {
+    "centerXRatio": 0.344444,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_25723d2f8f39": {
+    "centerXRatio": 0.485185,
+    "centerYRatio": 0.186316,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_2a781740e0a3": {
+    "centerXRatio": 0.522222,
+    "centerYRatio": 0.210588,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_2ec23dd6257c": {
+    "centerXRatio": 0.52963,
+    "centerYRatio": 0.184932,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_333b2942a319": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.170526,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_3728f29f4062": {
+    "centerXRatio": 0.488889,
+    "centerYRatio": 0.236471,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_37310a050df6": {
+    "centerXRatio": 0.492593,
+    "centerYRatio": 0.173684,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_374ddbdf1316": {
+    "centerXRatio": 0.511111,
+    "centerYRatio": 0.171486,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_38e6f9f593e0": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.188372,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_3c78e699c88e": {
+    "centerXRatio": 0.477778,
+    "centerYRatio": 0.211579,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_3cf7eef673ab": {
+    "centerXRatio": 0.348148,
+    "centerYRatio": 0.190588,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_3f7264077505": {
+    "centerXRatio": 0.514815,
+    "centerYRatio": 0.284127,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_3fe7cbecc58c": {
+    "centerXRatio": 0.521468,
+    "centerYRatio": 0.312223,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_471a51647b64": {
+    "centerXRatio": 0.45282,
+    "centerYRatio": 0.259366,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_49d2e0998de4": {
+    "centerXRatio": 0.588889,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_4e46e20fc847": {
+    "centerXRatio": 0.509259,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_4fb473a2888a": {
+    "centerXRatio": 0.511111,
+    "centerYRatio": 0.22,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_533e3964acac": {
+    "centerXRatio": 0.503704,
+    "centerYRatio": 0.261039,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_5549ece1424b": {
+    "centerXRatio": 0.496296,
+    "centerYRatio": 0.201176,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_55616f122da0": {
+    "centerXRatio": 0.503704,
+    "centerYRatio": 0.196471,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_59b4648631fc": {
+    "centerXRatio": 0.511111,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_5d5cf2285fa5": {
+    "centerXRatio": 0.522222,
+    "centerYRatio": 0.214286,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_5e51f7c44b65": {
+    "centerXRatio": 0.411111,
+    "centerYRatio": 0.198824,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_6208b10c7d34": {
+    "centerXRatio": 0.525926,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_66ec6aba0687": {
+    "centerXRatio": 0.514815,
+    "centerYRatio": 0.205882,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_674255bd54fb": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.22987,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_69d4d8840a85": {
+    "centerXRatio": 0.511111,
+    "centerYRatio": 0.222353,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_69f2f5d76423": {
+    "centerXRatio": 0.377778,
+    "centerYRatio": 0.184932,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_71d11360d069": {
+    "centerXRatio": 0.514815,
+    "centerYRatio": 0.277778,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_7349034ee10c": {
+    "centerXRatio": 0.526415,
+    "centerYRatio": 0.18829,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_76cc79fab3bb": {
+    "centerXRatio": 0.503906,
+    "centerYRatio": 0.149735,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_76cf8e572720": {
+    "centerXRatio": 0.511111,
+    "centerYRatio": 0.208889,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_77b5e2d35c0d": {
+    "centerXRatio": 0.53432,
+    "centerYRatio": 0.218812,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_83dd50299d66": {
+    "centerXRatio": 0.525926,
+    "centerYRatio": 0.190255,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_86490916dae9": {
+    "centerXRatio": 0.555556,
+    "centerYRatio": 0.184932,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_8a0919b0fa4b": {
+    "centerXRatio": 0.522222,
+    "centerYRatio": 0.18,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_948e8cd12d39": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.250649,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_9b59a4a5313f": {
+    "centerXRatio": 0.511111,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_9b86b0ac1ed6": {
+    "centerXRatio": 0.484906,
+    "centerYRatio": 0.153119,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_a35299e7bd60": {
+    "centerXRatio": 0.488083,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_a47a5747d56c": {
+    "centerXRatio": 0.507407,
+    "centerYRatio": 0.271429,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_ae310d24f6c7": {
+    "centerXRatio": 0.492593,
+    "centerYRatio": 0.212987,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_b19318b5db16": {
+    "centerXRatio": 0.507407,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_b3cfe0676d31": {
+    "centerXRatio": 0.569729,
+    "centerYRatio": 0.212742,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_b5da27000c03": {
+    "centerXRatio": 0.496296,
+    "centerYRatio": 0.214444,
+    "sideRatio": 0.42
+  },
+  "lovelive_char_bda2d4951acc": {
+    "centerXRatio": 0.535156,
+    "centerYRatio": 0.14781,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_c130e5754188": {
+    "centerXRatio": 0.503704,
+    "centerYRatio": 0.213684,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_c29967f92b4e": {
+    "centerXRatio": 0.533333,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_c467ee1f2aa5": {
+    "centerXRatio": 0.507407,
+    "centerYRatio": 0.190588,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_c4ad2668bf0c": {
+    "centerXRatio": 0.5,
+    "centerYRatio": 0.274026,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_c6cfcb4fee83": {
+    "centerXRatio": 0.501663,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_d322a35ac470": {
+    "centerXRatio": 0.47037,
+    "centerYRatio": 0.162651,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_daacc2c74513": {
+    "centerXRatio": 0.556604,
+    "centerYRatio": 0.157474,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_db6e5bac7e81": {
+    "centerXRatio": 0.485185,
+    "centerYRatio": 0.196842,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_de989fd953c8": {
+    "centerXRatio": 0.487037,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_e1f90531b47a": {
+    "centerXRatio": 0.506073,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_e534e4432015": {
+    "centerXRatio": 0.643396,
+    "centerYRatio": 0.153119,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_e603b088a961": {
+    "centerXRatio": 0.497094,
+    "centerYRatio": 0.284543,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_e8933130c9ac": {
+    "centerXRatio": 0.314936,
+    "centerYRatio": 0.265482,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_ecb04dafebb1": {
+    "centerXRatio": 0.538889,
+    "centerYRatio": 0.297054,
+    "sideRatio": 0.9
+  },
+  "lovelive_char_f191df84bd59": {
+    "centerXRatio": 0.522222,
+    "centerYRatio": 0.242222,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_f1fc0df6a818": {
+    "centerXRatio": 0.681481,
+    "centerYRatio": 0.201826,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_f3a7f765496c": {
+    "centerXRatio": 0.492593,
+    "centerYRatio": 0.195294,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_f54da3b8a5b9": {
+    "centerXRatio": 0.537037,
+    "centerYRatio": 0.211579,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_f84b1f60e871": {
+    "centerXRatio": 0.514815,
+    "centerYRatio": 0.204444,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_f8dd00a2cd1e": {
+    "centerXRatio": 0.560377,
+    "centerYRatio": 0.161326,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_fc58c31002a5": {
+    "centerXRatio": 0.485185,
+    "centerYRatio": 0.190588,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_fd3e9a4bb15f": {
+    "centerXRatio": 0.537037,
+    "centerYRatio": 0.26,
+    "sideRatio": 0.6
+  },
+  "lovelive_char_fe6c7f4234fb": {
+    "centerXRatio": 0.531481,
+    "centerYRatio": 0.290913,
+    "sideRatio": 0.9
+  }
+}

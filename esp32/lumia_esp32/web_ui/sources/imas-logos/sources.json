@@ -1,0 +1,74 @@
+[
+  {
+    "groupId": "imas_765as",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/765_Production_logo.svg/960px-765_Production_logo.svg.png",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3A765_Production_logo.svg",
+    "size": [
+      960,
+      551
+    ]
+  },
+  {
+    "groupId": "imas_cinderella",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/b/b4/THE_IDOLM%40STER_CINDERELLA_GIRLS_Logo.png",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATHE_IDOLM%40STER_CINDERELLA_GIRLS_Logo.png",
+    "size": [
+      500,
+      155
+    ]
+  },
+  {
+    "groupId": "imas_million",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/THE_IDOLM%40STER_MILLION_LIVE%21_Logo.png",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATHE_IDOLM%40STER_MILLION_LIVE%21_Logo.png",
+    "size": [
+      904,
+      247
+    ]
+  },
+  {
+    "groupId": "imas_sidem",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/6f/THE_IDOLM%40STER_SideM_Logo.png",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATHE_IDOLM%40STER_SideM_Logo.png",
+    "size": [
+      809,
+      301
+    ]
+  },
+  {
+    "groupId": "imas_gakuen",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/1a/THE_IDOLM%40STER_Gakuen_Logo.png",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATHE_IDOLM%40STER_Gakuen_Logo.png",
+    "size": [
+      303,
+      104
+    ]
+  },
+  {
+    "groupId": "imas_other",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/b/b6/THE_IDOLM%40STER_Logo_%282010-2016%29.png",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATHE_IDOLM%40STER_Logo_%282010-2016%29.png",
+    "size": [
+      500,
+      300
+    ]
+  },
+  {
+    "groupId": "imas_shiny",
+    "source": "https://shinycolors.idolmaster-official.jp/assets/img/top/kv_logo.png",
+    "sourcePage": "https://shinycolors.idolmaster-official.jp/",
+    "size": [
+      750,
+      262
+    ]
+  },
+  {
+    "groupId": "imas_ds_valiv",
+    "source": "inline official SVG",
+    "sourcePage": "https://idolmaster-official.jp/va-liv/",
+    "size": [
+      640,
+      200
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+idf_component_register(
+    SRCS
+        "ble_status_led.c"
+        "ble_transport.c"
+        "led_color_pipeline.c"
+        "led_route.c"
+        "led_strip_driver.c"
+        "led_tdm.c"
+        "led_tdm_framebuffer.c"
+        "led_tdm_scan.c"
+        "mode_button.c"
+        "mode_button_logic.c"
+        "serial_transport.c"
+        "sleep_switch.c"
+        "ws2812_tx.c"
+        "ws2812_encoder.c"
+        "wireless_mode.c"
+    INCLUDE_DIRS "include"
+    REQUIRES
+        bt
+        esp_common
+        esp_driver_gpio
+        esp_driver_rmt
+        esp_driver_usb_serial_jtag
+        freertos
+        lumia_effects
+        lumia_protocol
+        lumia_runtime
+        nvs_flash
+)

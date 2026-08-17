@@ -1,0 +1,168 @@
+{
+  "vectorVersion": "1.1.0",
+  "schemaFile": "maurya-protocol.json",
+  "sourceCommit": "56709f15cc0173d2c8b28fad8db68b7f48396844",
+  "encoding": "lowercase-hex-no-separators",
+  "crc": [
+    {
+      "id": "crc-empty",
+      "inputHex": "",
+      "crcValueHex": "ffff",
+      "wireSuffixHex": "ffff"
+    },
+    {
+      "id": "crc-ascii-123456789",
+      "inputHex": "313233343536373839",
+      "crcValueHex": "4b37",
+      "wireSuffixHex": "374b"
+    }
+  ],
+  "frames": [
+    {
+      "id": "modbus-read-groups-first-five",
+      "family": "modbus",
+      "description": "Address 1, read holding registers 0x0020 through 0x0024.",
+      "hex": "0103002000058403",
+      "completeFrameBytes": 8,
+      "expectedCrcValueHex": "0384"
+    },
+    {
+      "id": "modbus-write-global-brightness",
+      "family": "modbus",
+      "description": "Address 1, write register 0x0002 to 0x00ff.",
+      "hex": "0106000200ff684a",
+      "completeFrameBytes": 8,
+      "expectedCrcValueHex": "4a68"
+    },
+    {
+      "id": "modbus-write-two-group-registers",
+      "family": "modbus",
+      "description": "Address 1, write values 1 and 2 beginning at register 0x0020.",
+      "hex": "011000200002040001000221b6",
+      "completeFrameBytes": 13,
+      "expectedCrcValueHex": "b621"
+    },
+    {
+      "id": "modbus-exception-illegal-value",
+      "family": "modbus",
+      "description": "Exception response to function 0x03 with exception 0x03.",
+      "hex": "0183030131",
+      "completeFrameBytes": 5,
+      "expectedCrcValueHex": "3101"
+    },
+    {
+      "id": "vendor-get-info-request",
+      "family": "ota",
+      "hex": "01410101919c",
+      "completeFrameBytes": 6,
+      "vendorPayloadBytes": 1,
+      "expectedCrcValueHex": "9c91"
+    },
+    {
+      "id": "effect-begin-request",
+      "family": "effects",
+      "hex": "014101205184",
+      "completeFrameBytes": 6,
+      "vendorPayloadBytes": 1,
+      "expectedCrcValueHex": "8451"
+    },
+    {
+      "id": "effect-heartbeat-request",
+      "family": "effects",
+      "description": "Session id 0x12345678, encoded little-endian.",
+      "hex": "014105227856341246ec",
+      "completeFrameBytes": 10,
+      "vendorPayloadBytes": 5,
+      "expectedCrcValueHex": "ec46"
+    },
+    {
+      "id": "effect-end-request",
+      "family": "effects",
+      "description": "Session id 0x12345678, encoded little-endian.",
+      "hex": "01410523785634127b2c",
+      "completeFrameBytes": 10,
+      "vendorPayloadBytes": 5,
+      "expectedCrcValueHex": "2c7b"
+    },
+    {
+      "id": "effect-seven-group-frame",
+      "family": "effects",
+      "description": "Session 0x12345678, sequence 0x3456; seven group records with hue step 50.",
+      "hex": "01413121785634125634010000ffc864013200ffc865016400ffc866019600ffc86701c800ffc86801fa00ffc869012c01ffc86a4a29",
+      "completeFrameBytes": 54,
+      "vendorPayloadBytes": 49,
+      "expectedCrcValueHex": "294a"
+    },
+    {
+      "id": "effect-42-pixel-frame",
+      "family": "effects",
+      "description": "Session 0x78563412, sequence 0x9abc; pixel i is RGB(i,255-i,3*i mod 256).",
+      "hex": "0141872412345678bc9a012a00ff0001fe0302fd0603fc0904fb0c05fa0f06f91207f81508f71809f61b0af51e0bf4210cf3240df2270ef12a0ff02d10ef3011ee3312ed3613ec3914eb3c15ea3f16e94217e84518e74819e64b1ae54e1be4511ce3541de2571ee15a1fe05d20df6021de6322dd6623dc6924db6c25da6f26d97227d87528d77829d67b16c0",
+      "completeFrameBytes": 140,
+      "vendorPayloadBytes": 135,
+      "pixelCount": 42,
+      "expectedCrcValueHex": "c016"
+    },
+    {
+      "id": "ota-prepare-request",
+      "family": "ota",
+      "description": "Nonce bytes 00 through 0f.",
+      "hex": "014113020110000102030405060708090a0b0c0d0e0f7ce4",
+      "completeFrameBytes": 24,
+      "vendorPayloadBytes": 19,
+      "expectedCrcValueHex": "e47c"
+    },
+    {
+      "id": "ota-ble-begin-request",
+      "family": "ota",
+      "description": "Expected size 987136, layout 2, all-zero SHA-256 test value.",
+      "hex": "0141261000100f00020000000000000000000000000000000000000000000000000000000000000000da72",
+      "completeFrameBytes": 43,
+      "vendorPayloadBytes": 38,
+      "expectedCrcValueHex": "72da"
+    },
+    {
+      "id": "ota-ble-data-maximum-android-chunk",
+      "family": "ota",
+      "description": "Offset 0 and 118 data bytes 00 through 75.",
+      "hex": "01417b1100000000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475a5a9",
+      "completeFrameBytes": 128,
+      "vendorPayloadBytes": 123,
+      "firmwareDataBytes": 118,
+      "expectedCrcValueHex": "a9a5"
+    },
+    {
+      "id": "ota-ble-status-request",
+      "family": "ota",
+      "hex": "01410112d051",
+      "completeFrameBytes": 6,
+      "vendorPayloadBytes": 1,
+      "expectedCrcValueHex": "51d0"
+    }
+  ],
+  "mapping": [
+    { "groupOneBased": 1, "pixelInGroupOneBased": 1, "globalOneBased": 1, "linearZeroBased": 0 },
+    { "groupOneBased": 1, "pixelInGroupOneBased": 6, "globalOneBased": 6, "linearZeroBased": 5 },
+    { "groupOneBased": 2, "pixelInGroupOneBased": 1, "globalOneBased": 7, "linearZeroBased": 6 },
+    { "groupOneBased": 7, "pixelInGroupOneBased": 1, "globalOneBased": 37, "linearZeroBased": 36 },
+    { "groupOneBased": 7, "pixelInGroupOneBased": 6, "globalOneBased": 42, "linearZeroBased": 41 }
+  ],
+  "shareEnvelopes": [
+    {
+      "id": "share-effect-script-unicode-v1",
+      "description": "Canonical effect share with UTF-8 display names; gzip is a server response including createdAt.",
+      "kind": "effect",
+      "displayName": { "zh": "测试", "ja": "テスト" },
+      "sourceKind": "script",
+      "editorSchema": 4,
+      "programSchema": 6,
+      "source": "effect \"星空\" { wait(1s); }",
+      "contentHash": "3c601b0d69f73de53db28a4ef8525094cdd8cf4bacc87c4eb33c909ac23b4b4f",
+      "requestCanonicalUtf8": "{\"contentHash\":\"3c601b0d69f73de53db28a4ef8525094cdd8cf4bacc87c4eb33c909ac23b4b4f\",\"displayName\":{\"ja\":\"テスト\",\"zh\":\"测试\"},\"kind\":\"effect\",\"payload\":{\"editorSchema\":4,\"programSchema\":6,\"source\":\"effect \\\"星空\\\" { wait(1s); }\",\"sourceKind\":\"script\"},\"schema\":1}",
+      "serverCanonicalUtf8": "{\"contentHash\":\"3c601b0d69f73de53db28a4ef8525094cdd8cf4bacc87c4eb33c909ac23b4b4f\",\"createdAt\":\"2023-11-14T22:13:20Z\",\"displayName\":{\"ja\":\"テスト\",\"zh\":\"测试\"},\"kind\":\"effect\",\"payload\":{\"editorSchema\":4,\"programSchema\":6,\"source\":\"effect \\\"星空\\\" { wait(1s); }\",\"sourceKind\":\"script\"},\"schema\":1}",
+      "serverGzipHex": "1f8b08000000000000133d8ebb4ac44014865f259c4a210b734b3689959d20d86825dbcc9c9971a39b0b931159431a1744b016ecacadac2cf47502ab8fe1045ddbfffb6f3d60537b53fb23d92da1008e29a18ae834b773ae4dc2b5629914c666094b482e50eb0cad5012319ba3308a73cc492e91712594b010033a23bdd1873ed431c2f88cd21915678c1594178c9c078b2ebb7625d727b23250f470298375dcdc8f771fe3e621f0dbe9caf6fdf1fbed098618aeca5a07c1586bd007dccaf5aa917a8a1a5dfac69de2d254a14404e69a0b27ab9d92c6d035d70ecd7f3e5ac0f6f9e5ebf57301511fddc8d2efd16eff201a60673dfe9debd095ad9ff6bbbf323afc00bd8b984c2f010000",
+      "serverBlobSha256": "83cf3d10162751b1318bc7370c6122e3b4221f382f485caa324ba88a857e90db",
+      "createdAt": "2023-11-14T22:13:20Z"
+    }
+  ]
+}

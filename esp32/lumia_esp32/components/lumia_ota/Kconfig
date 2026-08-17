@@ -1,0 +1,32 @@
+menu "Maurya OTA"
+
+config LUMIA_OTA_PROTOCOL_VERSION
+    int "OTA protocol version"
+    default 2
+    range 1 255
+
+config LUMIA_OTA_LAYOUT_VERSION
+    int "Flash layout version"
+    default 2
+    range 2 255
+
+config LUMIA_OTA_ASSET_PACK_VERSION
+    int "Fixed avatar asset pack version"
+    default 1
+    range 1 255
+
+config LUMIA_OTA_WEB_VARIANT
+    string "Web language variant"
+    default "multilingual"
+
+config LUMIA_OTA_SESSION_TIMEOUT_SECONDS
+    int "OTA Wi-Fi session timeout"
+    default 300
+    range 60 900
+
+config LUMIA_OTA_UPLOAD_TIMEOUT_SECONDS
+    int "OTA upload inactivity timeout"
+    default 20
+    range 5 120
+
+endmenu

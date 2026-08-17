@@ -1,0 +1,41 @@
+# Build output
+**/build/
+**/out/
+**/.gradle/
+**/node_modules/
+**/dist/
+**/.pytest_cache/
+**/__pycache__/
+
+# Generated and binary artifacts
+*.apk
+*.aab
+*.ipa
+*.bin
+*.zip
+*.7z
+*.rar
+*.pdf
+*.dmg
+
+# Media and caches
+**/cache/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp3
+*.wav
+*.m4a
+
+# Local credentials and signing material
+IP.txt
+known_hosts
+*.pem
+*.p12
+*.jks
+*.keystore
+*.mobileprovision
+local.properties
+secrets.properties

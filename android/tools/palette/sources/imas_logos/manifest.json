@@ -1,0 +1,86 @@
+{
+  "retrievedAt": "2026-07-19",
+  "notice": "Official project identification assets. No affiliation or endorsement is implied.",
+  "assets": [
+    {
+      "id": "imas_765as",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:765_Production_logo.svg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/765%20Production%20logo.svg",
+      "sourceFile": "imas_765as.svg",
+      "sourceSha256": "03030c93dd6263558822e80e0a99e2697969109c4fe2d07c173e29d74c178c67",
+      "renderedFile": "rendered/imas_765as.png",
+      "renderedSha256": "4790f4a6c77e90f91a534b70e063b573d8b91c7a3e6b4caf505045602da1bcc7",
+      "licenseNote": "Commons file page marks this as PD-textlogo; trademark restrictions may still apply."
+    },
+    {
+      "id": "imas_cinderella",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:THE_IDOLM@STER_CINDERELLA_GIRLS_Logo.png",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/THE%20IDOLM%40STER%20CINDERELLA%20GIRLS%20Logo.png",
+      "sourceFile": "imas_cinderella.png",
+      "sourceSha256": "8f0e6219041359e9825571db7113504ec5c77570adfd34365bbf56f8db70b73d",
+      "renderedFile": "rendered/imas_cinderella.png",
+      "renderedSha256": "ef9a6b0095930dd0e434f7479b5d1e3d3e892f9bef651bccab6d1e066c6f8a02",
+      "licenseNote": "Commons file page marks this as PD-textlogo; trademark restrictions may still apply."
+    },
+    {
+      "id": "imas_ds_valiv",
+      "sourcePage": "https://idolmaster-official.jp/va-liv",
+      "downloadUrl": "inline h1 SVG, viewBox 0 0 137 39",
+      "sourceFile": "imas_ds_valiv.svg",
+      "sourceSha256": "8031f02848ecc37c68ded81861c2855abf5a3809b942078fac338a2709ae1f32",
+      "renderedFile": "rendered/imas_ds_valiv.png",
+      "renderedSha256": "5e7245c35aff5b14c70b5ae994cc705b1305916cca92c8709be2100eeab7f723",
+      "licenseNote": "Official Bandai Namco project-identification asset; trademark and copyright apply."
+    },
+    {
+      "id": "imas_gakuen",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:THE_IDOLM@STER_Gakuen_Logo.png",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/THE%20IDOLM%40STER%20Gakuen%20Logo.png",
+      "sourceFile": "imas_gakuen.png",
+      "sourceSha256": "108d2b1cf7f33653fcd5a12b7db1bbdab18e46819e6985cbdee9111cc10d982b",
+      "renderedFile": "rendered/imas_gakuen.png",
+      "renderedSha256": "bbaa6acc48bfff784248b68a8e3e40d20d7855b50fb02dd6d3c8992a391a50a1",
+      "licenseNote": "Commons file page marks this as PD-textlogo; trademark restrictions may still apply."
+    },
+    {
+      "id": "imas_million",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:THE_IDOLM@STER_MILLION_LIVE!_Logo.png",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/THE%20IDOLM%40STER%20MILLION%20LIVE%21%20Logo.png",
+      "sourceFile": "imas_million.png",
+      "sourceSha256": "2f09047c78b32a0b58d089713329fe66c31fb85edeea6835c6b173227485eac8",
+      "renderedFile": "rendered/imas_million.png",
+      "renderedSha256": "b3dce4d326ef04311d215ae69c9ead8d93359f84f1f553c7f163007a1a7afb1b",
+      "licenseNote": "Commons file page marks this as PD-textlogo; trademark restrictions may still apply."
+    },
+    {
+      "id": "imas_other",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_iDOLM@STER_logo.svg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20iDOLM%40STER%20logo.svg",
+      "sourceFile": "imas_other.svg",
+      "sourceSha256": "077a721ea3c26009db2c04e0957403454e27fad14dfec6d920241840865a7e9b",
+      "renderedFile": "rendered/imas_other.png",
+      "renderedSha256": "a099e76a1f66ae9ba32b0919d054b598c5d5f1465067bc1854c372fa96aa869f",
+      "licenseNote": "Commons file page marks this as PD-textlogo; trademark restrictions may still apply."
+    },
+    {
+      "id": "imas_shiny",
+      "sourcePage": "https://shinycolors.idolmaster-official.jp/",
+      "downloadUrl": "https://shinycolors.idolmaster-official.jp/assets/img/common/header_logo.png",
+      "sourceFile": "imas_shiny.png",
+      "sourceSha256": "f17454beac5df5c72d3b512355d5261f241eabff7d7940283a935c5d86168559",
+      "renderedFile": "rendered/imas_shiny.png",
+      "renderedSha256": "5ca43b6c980bffe163e20587649ff5f931b88b7baa39e8d8b3283d6989ed2b68",
+      "licenseNote": "Official Bandai Namco project-identification asset; trademark and copyright apply."
+    },
+    {
+      "id": "imas_sidem",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:THE_IDOLM@STER_SideM_Logo.png",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/THE%20IDOLM%40STER%20SideM%20Logo.png",
+      "sourceFile": "imas_sidem.png",
+      "sourceSha256": "1721e1658e2b5538aa01fbcb639ce67fb1aa41780efd1006470cd12ec4e43346",
+      "renderedFile": "rendered/imas_sidem.png",
+      "renderedSha256": "007ef4488b3182f6c212ea9f9a088a03425a1b12ee023178a8b3939a1e7abbab",
+      "licenseNote": "Commons file page marks this as PD-textlogo; trademark restrictions may still apply."
+    }
+  ]
+}

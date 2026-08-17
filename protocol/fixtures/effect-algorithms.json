@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "numberVectors": [
+    {"function":"SINE_WAVE","arguments":[1000,0],"elapsedMilliseconds":0,"expected":0.5,"tolerance":1e-9},
+    {"function":"SINE_WAVE","arguments":[1000,0],"elapsedMilliseconds":250,"expected":1.0,"tolerance":1e-9},
+    {"function":"TRIANGLE_WAVE","arguments":[1000,0],"elapsedMilliseconds":0,"expected":0.0,"tolerance":1e-9},
+    {"function":"SAW_WAVE","arguments":[1000,0],"elapsedMilliseconds":750,"expected":0.75,"tolerance":1e-9},
+    {"function":"SQUARE_WAVE","arguments":[1000,0.25,0],"elapsedMilliseconds":100,"expected":1.0,"tolerance":1e-9},
+    {"function":"SQUARE_WAVE","arguments":[1000,0.25,0],"elapsedMilliseconds":300,"expected":0.0,"tolerance":1e-9},
+    {"function":"SMOOTHSTEP","arguments":[0,1,0.5],"elapsedMilliseconds":0,"expected":0.5,"tolerance":1e-9}
+  ],
+  "patternVectors": [
+    {"operation":"MIRROR","input":[0,1,2,3,4,5,6],"expected":[0,1,2,3,2,1,0]},
+    {"operation":"ROTATE","input":[0,1,2,3,4,5,6],"shift":-1,"expected":[1,2,3,4,5,6,0]},
+    {"operation":"CENTER_SPREAD","input":[0,1,2,3,4,5,6],"expected":[3,2,4,1,5,0,6]},
+    {"operation":"CENTER_CONTRACT","input":[0,1,2,3,4,5,6],"expected":[0,6,1,5,2,4,3]}
+  ]
+}

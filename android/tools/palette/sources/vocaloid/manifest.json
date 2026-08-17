@@ -1,0 +1,456 @@
+{
+  "retrievedAt": "2026-07-22",
+  "usage": "Unofficial, non-commercial character identification for a fan light controller.",
+  "characters": [
+    {
+      "id": "vocaloid_luo_tianyi",
+      "sourceUrl": "https://vsinger.com/vsinger",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/6/6d/Luo_tianyi_v4_no_bg.png/revision/latest?cb=20211218025044",
+      "sourceFile": "luo_tianyi.png",
+      "sha256": "dbc3429e2e8422b06f231919747e4eb017d4d42b02b321dd879c52d481895dc0",
+      "colorSource": "official",
+      "hex": "#66CCFF",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.14,
+        "sideRatio": 0.4
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_yanhe",
+      "sourceUrl": "https://vsinger.com/vsinger",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/0/01/YANHE_V5_Transparent.png/revision/latest?cb=20220515035737",
+      "sourceFile": "yanhe.png",
+      "sha256": "2c540bd1cbee7ea1a50b6a27b815fd65d4b9761210a5af8c6a079ae6d67abeef",
+      "colorSource": "official",
+      "hex": "#00FFCC",
+      "crop": {
+        "centerXRatio": 0.51,
+        "centerYRatio": 0.23,
+        "sideRatio": 0.31
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_yuezheng_ling",
+      "sourceUrl": "https://vsinger.com/vsinger",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/2/22/Ling_V3_boxart.png/revision/latest?cb=20220904223642",
+      "sourceFile": "yuezheng_ling.png",
+      "sha256": "252b745a32e693df0be3f798395506e08bd8821343bb778c31be6763d8ed10b6",
+      "colorSource": "official",
+      "hex": "#EE0000",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.18,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_yuezheng_longya",
+      "sourceUrl": "https://vsinger.com/vsinger",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/c/ca/Longya_V4.png/revision/latest?cb=20221016033050",
+      "sourceFile": "yuezheng_longya.png",
+      "sha256": "2943808efc8eb859e73b5617cde8d3ea911666c4876aab0d53a317f1ff1777f2",
+      "colorSource": "official",
+      "hex": "#006666",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.14,
+        "sideRatio": 0.42
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_zhiyu_moke",
+      "sourceUrl": "https://vsinger.com/vsinger",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/1/19/Moke_full_transparent.png/revision/latest?cb=20191218223457",
+      "sourceFile": "zhiyu_moke.png",
+      "sha256": "9d2605d691af6ac8ea1ea2429ffd979d3ad1c130ca3023197a1886974d2843df",
+      "colorSource": "inferred",
+      "hex": "#0080FF",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.17,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_mo_qingxian",
+      "sourceUrl": "https://vsinger.com/vsinger",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/d/d5/Qingxian_v4_transparent.png/revision/latest?cb=20220430154838",
+      "sourceFile": "mo_qingxian.png",
+      "sha256": "191112510853e6bf05eb797acb334d6e1f2ec23481bc318b6336b6750828d9dc",
+      "colorSource": "inferred",
+      "hex": "#8F6BB3",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.16,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_xingchen",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/4/48/Stardust_transparent.png/revision/latest?cb=20210909213727",
+      "sourceFile": "xingchen.png",
+      "sha256": "98bd8ee1b831b0fc779b1f0ca7921e3f22d8df2e66b8026e1d5c91d326792cb9",
+      "colorSource": "inferred",
+      "hex": "#9999FF",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.13,
+        "sideRatio": 0.28
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_haiyi",
+      "sourceUrl": "https://dreamtonics.com/ja/lineup/haiyi/",
+      "downloadMirror": "https://static.wikia.nocookie.net/synthv/images/e/e3/Haiyi_transparent.png/revision/latest?cb=20240427153544",
+      "sourceFile": "haiyi.png",
+      "sha256": "db47dece2c8dc2cca8f9bed1f49a710858b8c0999fad51a973440ba732ebd5c2",
+      "colorSource": "inferred",
+      "hex": "#3399FF",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.14,
+        "sideRatio": 0.42
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_cangqiong",
+      "sourceUrl": "https://www.bilibili.com/video/BV1Dx411d77f/",
+      "downloadMirror": "https://static.wikia.nocookie.net/synthv/images/2/2d/Cangqiong_2_full.jpg/revision/latest?cb=20200626212729",
+      "sourceFile": "cangqiong.png",
+      "sha256": "618e6995e7562300dcf47d355e4bcd65ddcf288b71428248fcae58a893f977f1",
+      "colorSource": "inferred",
+      "hex": "#00A6A6",
+      "crop": {
+        "centerXRatio": 0.65,
+        "centerYRatio": 0.36,
+        "sideRatio": 0.37
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_chiyu",
+      "sourceUrl": "https://www.bilibili.com/video/BV1Ub41157V4/",
+      "downloadMirror": "https://static.wikia.nocookie.net/synthv/images/8/85/Chiyu_2_full.jpg/revision/latest?cb=20200626212115",
+      "sourceFile": "chiyu.png",
+      "sha256": "1080096c2fdf0f4e65f47b05e53f87b900dfe947bb575cbf62d05b5e4eded1e1",
+      "colorSource": "inferred",
+      "hex": "#FF3333",
+      "crop": {
+        "centerXRatio": 0.52,
+        "centerYRatio": 0.29,
+        "sideRatio": 0.24
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_shian",
+      "sourceUrl": "https://www.bilibili.com/video/BV1e4411M74V/",
+      "downloadMirror": "https://static.wikia.nocookie.net/synthv/images/5/55/Shian_2_full.jpg/revision/latest?cb=20210818055806",
+      "sourceFile": "shian.png",
+      "sha256": "188fa910fa2007093bce363eac22a4d1093068ed583bc7d7fb093ee93f2a4161",
+      "colorSource": "inferred",
+      "hex": "#F4C542",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.31,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_xin_hua",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/b/bb/Xin_hua_v4.png/revision/latest?cb=20170921170452",
+      "sourceFile": "xin_hua.png",
+      "sha256": "fa6405ec4e4970be5994e47787f0b9e850217ad7d4937d91c0253471524b618b",
+      "colorSource": "inferred",
+      "hex": "#EE82A7",
+      "crop": {
+        "centerXRatio": 0.51,
+        "centerYRatio": 0.23,
+        "sideRatio": 0.24
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_hatsune_miku",
+      "sourceUrl": "https://piapro.net/intl/en_character.html",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/e/e4/MIKU_SP.png/revision/latest?cb=20241025033142",
+      "sourceFile": "hatsune_miku.png",
+      "sha256": "f68b200f6a8e126f757d8aa169e503132057e701ec894c7976857c03fb429333",
+      "colorSource": "official",
+      "hex": "#39C5BB",
+      "crop": {
+        "centerXRatio": 0.47,
+        "centerYRatio": 0.16,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_kagamine_rin",
+      "sourceUrl": "https://piapro.net/intl/en_character.html",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/3/36/RinV4X.png/revision/latest?cb=20151222104804",
+      "sourceFile": "kagamine_rin.png",
+      "sha256": "3a8a79e5a1e94f23a202ccea1714193b1f8b55d027874b483b60a015b2cca2d7",
+      "colorSource": "inferred",
+      "hex": "#FFA500",
+      "crop": {
+        "centerXRatio": 0.45,
+        "centerYRatio": 0.18,
+        "sideRatio": 0.44
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_kagamine_len",
+      "sourceUrl": "https://piapro.net/intl/en_character.html",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/a/a1/LenV4X.png/revision/latest?cb=20151222104845",
+      "sourceFile": "kagamine_len.png",
+      "sha256": "ba36630c7e5168e2b1cc9dd06227fc81a97348c306871f2d58d55eec97e13cd3",
+      "colorSource": "inferred",
+      "hex": "#FFD000",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.17,
+        "sideRatio": 0.44
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_megurine_luka",
+      "sourceUrl": "https://piapro.net/intl/en_character.html",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/8/80/LUKA_SP.png/revision/latest?cb=20241025030907",
+      "sourceFile": "megurine_luka.png",
+      "sha256": "2658a4ae576cfd63dc2868829580d4cb56f6c655a183eb350507b541a5fede5d",
+      "colorSource": "inferred",
+      "hex": "#FFB6C1",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.14,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_meiko",
+      "sourceUrl": "https://piapro.net/intl/en_character.html",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/c/c4/MEIKO_SP.png/revision/latest?cb=20241025030706",
+      "sourceFile": "meiko.png",
+      "sha256": "66ff8d4522e76d43d1e8035fb9f7345a34f78ce551c5e9560fd99a361624da67",
+      "colorSource": "inferred",
+      "hex": "#D80000",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.15,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_kaito",
+      "sourceUrl": "https://piapro.net/intl/en_character.html",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/8/82/KAITO_SP.png/revision/latest?cb=20241025030728",
+      "sourceFile": "kaito.png",
+      "sha256": "258ccf999fe52b0b5810629d1610c8ef0a134a87b3f4224a41da36cb8215f103",
+      "colorSource": "inferred",
+      "hex": "#2255CC",
+      "crop": {
+        "centerXRatio": 0.42,
+        "centerYRatio": 0.14,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_gumi",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/a/ad/AI_Megpoid_GUMI_transparent.png/revision/latest?cb=20221016001045",
+      "sourceFile": "gumi.png",
+      "sha256": "b9fc2debbeca03b9c370958ffd25d25ae93a13fc4406ee7a33f8f8bf8bcb35aa",
+      "colorSource": "inferred",
+      "hex": "#6BCB3C",
+      "crop": {
+        "centerXRatio": 0.39,
+        "centerYRatio": 0.1,
+        "sideRatio": 0.33
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_kamui_gakupo",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/c/cb/Ofclboxart_icltd_Gackpoid_Kamui_Gakupo.jpg/revision/latest?cb=20191219000253",
+      "sourceFile": "kamui_gakupo.png",
+      "sha256": "2e8b87c35c496c9c1c732fbb7dd4863122d6a2d65f5d4b61ca752311137ffaf2",
+      "colorSource": "inferred",
+      "hex": "#7651A8",
+      "crop": {
+        "centerXRatio": 0.68,
+        "centerYRatio": 0.37,
+        "sideRatio": 0.34
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_ia",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/2/2e/IA.png/revision/latest?cb=20140724155620",
+      "sourceFile": "ia.png",
+      "sha256": "fd72de86f4f8377e63bedbbb5f42c36236ca22d75d3d47d01d04179500f136d4",
+      "colorSource": "inferred",
+      "hex": "#F5A9C7",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.18,
+        "sideRatio": 0.38
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_v_flower",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/a/a5/V4flower.png/revision/latest?cb=20250314003504",
+      "sourceFile": "v_flower.png",
+      "sha256": "56bfc0198b0510c09769005bb5ff1a0fb24d2507f923d8862bbc684a44fe8b74",
+      "colorSource": "inferred",
+      "hex": "#7B61A8",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.15,
+        "sideRatio": 0.54
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_yuzuki_yukari",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/d/de/Yuzuki_Yukari_vocaloidneo.png/revision/latest?cb=20221027033007",
+      "sourceFile": "yuzuki_yukari.png",
+      "sha256": "e2e8d1b1197685eddb0e9bac82a387401f3839102535e4b41571c101596ba4bd",
+      "colorSource": "inferred",
+      "hex": "#B39DDB",
+      "crop": {
+        "centerXRatio": 0.29,
+        "centerYRatio": 0.15,
+        "sideRatio": 0.32
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_kizuna_akari",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/9/9b/Akari_V6.png/revision/latest?cb=20250531040152",
+      "sourceFile": "kizuna_akari.png",
+      "sha256": "28bc1d6fa6723e321cb8a344ba0ef103ec3ae7e36ce14ae39143036a84214352",
+      "colorSource": "inferred",
+      "hex": "#F4A742",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.16,
+        "sideRatio": 0.4
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_otomachi_una",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/b/be/AI_Una_Sugar_transparent.png/revision/latest?cb=20230527163146",
+      "sourceFile": "otomachi_una.png",
+      "sha256": "3cc38aeff467aacf376e9a40e7ab5187516514416b2b0a59d41f88bc840f5edf",
+      "colorSource": "inferred",
+      "hex": "#E94E9A",
+      "crop": {
+        "centerXRatio": 0.56,
+        "centerYRatio": 0.25,
+        "sideRatio": 0.42
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_kaai_yuki",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/9/9e/Kaai_Yuki_V4.png/revision/latest?cb=20250208060130",
+      "sourceFile": "kaai_yuki.png",
+      "sha256": "041708de7fd8633f34600ffe85d87699c37caabdda40cb8019ef2a0a8c13a7fd",
+      "colorSource": "inferred",
+      "hex": "#B8293D",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.17,
+        "sideRatio": 0.46
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_tohoku_zunko",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/c/c5/Tohoku_Zunko_V4.png/revision/latest?cb=20221018231440",
+      "sourceFile": "tohoku_zunko.png",
+      "sha256": "d4211db8c9be5da0f36d4dfb258cd612decfe13e58c7c9b0db478f36429d9717",
+      "colorSource": "inferred",
+      "hex": "#5ABF73",
+      "crop": {
+        "centerXRatio": 0.47,
+        "centerYRatio": 0.2,
+        "sideRatio": 0.43
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_lily",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/7/73/Lily_V3.jpg/revision/latest?cb=20200515074235",
+      "sourceFile": "lily.png",
+      "sha256": "04863c89c4686728bda0f993218cba2db136f7bf010c478d9f0bd9239ecaeef7",
+      "colorSource": "inferred",
+      "hex": "#F2C94C",
+      "crop": {
+        "centerXRatio": 0.5,
+        "centerYRatio": 0.17,
+        "sideRatio": 0.4
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_nekomura_iroha",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/e/e3/Iroha_natrual.png/revision/latest?cb=20180609213847",
+      "sourceFile": "nekomura_iroha.png",
+      "sha256": "109ee0a6cbc58f90475896b42da7c6ff5e47ef5ab98ef832cc138373c43adbbe",
+      "colorSource": "inferred",
+      "hex": "#E85D75",
+      "crop": {
+        "centerXRatio": 0.65,
+        "centerYRatio": 0.24,
+        "sideRatio": 0.32
+      },
+      "faceReview": "approved-single-face"
+    },
+    {
+      "id": "vocaloid_fukase",
+      "sourceUrl": "https://www.vocaloid.com/anniversary/voicebank/",
+      "downloadMirror": "https://static.wikia.nocookie.net/vocaloid/images/f/f5/FUKASE_TRANSPARENT_NOTXT.png/revision/latest?cb=20191219002532",
+      "sourceFile": "fukase.png",
+      "sha256": "b4f4993acc254a7164e66e13a13ede3343b41c975bc4254ce29e3fb78d914310",
+      "colorSource": "inferred",
+      "hex": "#E60012",
+      "crop": {
+        "centerXRatio": 0.22,
+        "centerYRatio": 0.16,
+        "sideRatio": 0.34
+      },
+      "faceReview": "approved-single-face"
+    }
+  ]
+}

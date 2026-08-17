@@ -1,0 +1,34 @@
+menu "Lumia web control configuration"
+
+    config LUMIA_WIFI_AP_SSID_PREFIX
+        string "SoftAP SSID prefix"
+        default "Maurya"
+
+    config LUMIA_WIFI_AP_PASSWORD
+        string "SoftAP WPA2 password"
+        default "Maurya123"
+        help
+            Must be between 8 and 63 characters.
+
+    config LUMIA_WIFI_AP_AUTO_CHANNEL
+        bool "Select the least congested SoftAP channel at startup"
+        default y
+        help
+            Scan once at startup and choose between non-overlapping channels
+            1, 6, and 11. The configured SoftAP channel is used if scanning fails.
+
+    config LUMIA_WIFI_AP_CHANNEL
+        int "SoftAP channel (manual or automatic fallback)"
+        range 1 13
+        default 1
+
+    config LUMIA_WIFI_AP_MAX_CLIENTS
+        int "SoftAP maximum clients"
+        range 1 4
+        default 2
+
+    config LUMIA_WIFI_CAPTIVE_DNS
+        bool "Enable captive portal wildcard DNS"
+        default y
+
+endmenu

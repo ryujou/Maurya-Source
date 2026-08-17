@@ -1,0 +1,143 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "7B352B23-9C9B-415F-BBE1-87EF84C12DDE.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "resources-populated-dark_0_47E9EBEC-F15C-4D06-B497-070F88F3A203.png",
+        "timestamp" : 1786240717.296
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testDarkAppearanceVisualBaseline()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testDarkAppearanceVisualBaseline"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "5FFE5F03-B645-4509-8299-5B97F40F2ED0.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "editor-recovery-light_0_57CE6B3C-CD39-4A1B-A8DF-46C14B2A3CA3.png",
+        "timestamp" : 1786240722.667
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testEditorRecoveryAndControlsAreReachable()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testEditorRecoveryAndControlsAreReachable"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "02B4F6B3-2D86-474D-A95F-EA2F384FE8B5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "scan-rtl-axxxl_0_F73D3036-A206-4FC8-90C0-9266D0FC70A3.png",
+        "timestamp" : 1786240727.436
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testLargestTextAndRTLLaunchDoesNotCrash()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testLargestTextAndRTLLaunchDoesNotCrash"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "D59F8583-A461-4B18-94E5-A0BD9B7A9F9A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ota-fail-closed_0_CFD4185C-D921-4DE3-9EBD-BF9F7A25D72B.png",
+        "timestamp" : 1786240736.476
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "6FD72380-D10C-4B2F-B4DF-516EEB8ADFBC.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "scan-light_0_76C2CB6C-6095-4FAA-B7C3-CF1AAB0C491C.png",
+        "timestamp" : 1786240732.083
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testOfflineLaunchAndProductionGatesFailClosed()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testOfflineLaunchAndProductionGatesFailClosed"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "073599DF-E9BA-4177-A06E-8E862B354755.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "effects-populated-light_0_D7E616DB-E083-4DFC-9593-EAF620CB19A7.png",
+        "timestamp" : 1786240748.878
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "742E0D4B-8171-41AE-90DD-0BE0C37886C9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "character-avatar-search-light_0_C019B476-1501-4836-B9A0-AFBA77CF50FB.png",
+        "timestamp" : 1786240744.374
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "A43DD1AB-C49F-434F-ABDC-5447B673F454.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "resources-populated-light_0_F52AB69D-95AD-456A-885A-471E37B9C2EB.png",
+        "timestamp" : 1786240741.502
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testPopulatedResourcesAndEffectLibraryJourneys()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testPopulatedResourcesAndEffectLibraryJourneys"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "659BDFAF-B2E4-489D-8C84-F53A88058E84.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "resources-axxxl-differentiate-without-color_0_A2BAB655-A3B6-484F-A111-F6C48752668D.png",
+        "timestamp" : 1786240754.405
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testResourceFallbackAtLargestTextAndDifferentiateWithoutColor()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testResourceFallbackAtLargestTextAndDifferentiateWithoutColor"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "9D57AB76-BD62-406D-A1FC-A3A1F634ADE7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "share-confirm-failure_0_0FCA18AE-ACEF-47AE-9343-4AF889945C62.png",
+        "timestamp" : 1786240762.931
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "D85A6221-7928-4E69-9E8F-55BD4D357CBC",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "3F790AA1-61A0-4DDC-B097-187905EA8C36.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "share-preview-light_0_2D0C4896-0907-491B-9C4A-5B48B13BAF91.png",
+        "timestamp" : 1786240761.096
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testSharePreviewConfirmFailureAndCancellationJourneys()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testSharePreviewConfirmFailureAndCancellationJourneys"
+  }
+]

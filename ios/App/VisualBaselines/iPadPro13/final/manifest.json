@@ -1,0 +1,35 @@
+[
+  {
+    "attachments": [
+      {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "3D2ECC18-FDB1-4AF7-A641-CD7C3998379B",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "988A9004-77DD-415B-A7EE-4934EF2939B8.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "ipad-landscape-ota-fail-closed-split_0_C9B38B73-CE9E-4D5B-A288-F73E3A8EF514.png",
+        "timestamp": 1786253647.073
+      },
+      {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "3D2ECC18-FDB1-4AF7-A641-CD7C3998379B",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "D51D36B7-3672-487F-9F60-807873AC9CEC.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "ipad-landscape-editor-keyboard-split_0_28EAE14B-AA5D-47E3-9E0C-B4BF28D826A6.png",
+        "timestamp": 1786253638.093
+      },
+      {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "3D2ECC18-FDB1-4AF7-A641-CD7C3998379B",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "52AB1CC7-9499-4E34-9DEA-A4D97DC72620.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "ipad-landscape-resources-split_0_E4838126-B4A0-4987-A0CC-49404805A3EF.png",
+        "timestamp": 1786253629.987
+      }
+    ],
+    "testIdentifier": "MauryaUITests/testIPadProLandscapeKeepsSidebarAndMajorRoutesUsable()",
+    "testIdentifierURL": "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testIPadProLandscapeKeepsSidebarAndMajorRoutesUsable"
+  }
+]

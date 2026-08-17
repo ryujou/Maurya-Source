@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaId": "com.ryujou.maurya.protocol",
+  "status": "cross-checked-working-tree-baseline",
+  "sourceCommit": "56709f15cc0173d2c8b28fad8db68b7f48396844",
+  "numericNotation": {
+    "jsonIntegers": "decimal",
+    "hexFields": "lowercase hexadecimal strings without 0x",
+    "bitNumbering": "least-significant bit is bit 0"
+  },
+  "ble": {
+    "serviceUuid": "0000ffe0-0000-1000-8000-00805f9b34fb",
+    "writeCharacteristicUuid": "0000ffe1-0000-1000-8000-00805f9b34fb",
+    "notifyCharacteristicUuid": "0000ffe2-0000-1000-8000-00805f9b34fb",
+    "clientConfigurationDescriptorUuid": "00002902-0000-1000-8000-00805f9b34fb",
+    "firmwareNames": {
+      "writeCharacteristic": "RX",
+      "notifyCharacteristic": "TX"
+    },
+    "maximumCompleteFrameBytes": 244,
+    "evidence": [
+      "android/app/src/main/java/com/example/peacock/ble/BleConstants.kt:5-8",
+      "esp32/lumia_esp32/components/lumia_platform/include/ble_transport.h:8-12",
+      "esp32/lumia_esp32/components/lumia_platform/ble_transport.c:398-412"
+    ]
+  },
+  "geometry": {
+    "groupCount": 7,
+    "pixelsPerGroup": 6,
+    "pixelCount": 42,
+    "linearOrder": "group-major",
+    "zeroBasedIndexFormula": "groupIndex * pixelsPerGroup + pixelInGroupIndex",
+    "validZeroBasedPixelIndex": {
+      "minimum": 0,
+      "maximum": 41
+    },
+    "confidence": "owner-confirmed-and-cross-implemented",
+    "evidence": [
+      "IOS_PORTING_MASTER_PLAN.md:117-143",
+      "android/app/src/main/java/com/example/peacock/feature/effects/EffectGeometry.kt:4-8",
+      "esp32/lumia_esp32/components/lumia_runtime/include/lumia_geometry.h:11-24",
+      "esp32/lumia_esp32/tests/host/test_led_strip_routing.c:69-129"
+    ]
+  },
+  "modbusRtu": {
+    "defaultDeviceAddress": 1,
+    "crc": {
+      "name": "CRC-16/MODBUS",
+      "initialValueHex": "ffff",
+      "reflectedPolynomialHex": "a001",
+      "widthBits": 16,
+      "wireOrder": "little-endian",
+      "coverage": "all frame bytes except the trailing two CRC bytes"
+    },
+    "functionCodes": {
+      "readHoldingRegisters": 3,
+      "writeSingleRegister": 6,
+      "writeMultipleRegisters": 16,
+      "vendor": 65
+    },
+    "requestIntegerOrder": {
+      "registerAddress": "big-endian",
+      "registerCount": "big-endian",
+      "registerValue": "big-endian"
+    },
+    "exception": {
+      "functionEncoding": "requestFunction | 0x80",
+      "completeFrameBytes": 5,
+      "codes": {
+        "illegalAddress": 2,
+        "illegalValue": 3
+      }
+    },
+    "vendorEnvelope": {
+      "layout": [
+        { "name": "deviceAddress", "bytes": 1, "type": "u8" },
+        { "name": "function", "bytes": 1, "constant": 65 },
+        { "name": "payloadLength", "bytes": 1, "type": "u8" },
+        { "name": "payload", "bytesFrom": "payloadLength" },
+        { "name": "crc", "bytes": 2, "type": "crc16-modbus-little-endian" }
+      ],
+      "completeFrameBytesFormula": "payloadLength + 5",
+      "maximumPayloadBytes": 239,
+      "maximumCompleteFrameBytes": 244,
+      "requestRouting": "BLE only in current firmware"
+    },
+    "limits": {
+      "maximumRegisterCount": 64,
+      "firmwareMaximumResponseBytes": 160
+    },
+    "evidence": [
+      "android/app/src/main/java/com/example/peacock/protocol/ModbusCodec.kt:4-135",
+      "esp32/lumia_esp32/components/lumia_protocol/modbus_crc.c:1-20",
+      "esp32/lumia_esp32/components/lumia_protocol/modbus_frame.c:5-67",
+      "esp32/lumia_esp32/components/lumia_protocol/modbus_server.c:8-206",
+      "esp32/lumia_esp32/main/app_main.c:49-65"
+    ]
+  },
+  "registerMap": {
+    "registerEncoding": "u16-big-endian-on-wire",
+    "global": {
+      "sceneMode": 0,
+      "sceneParam": 1,
+      "ledGlobalBrightness": 2,
+      "ledGainRed": 3,
+      "ledGainGreen": 4,
+      "ledGainBlue": 5,
+      "configSaveState": 10,
+      "deviceAddress": 11,
+      "rxRequestCount": 12,
+      "rxOverflowCount": 13,
+      "txDropCount": 14,
+      "parseErrorCount": 15,
+      "temperatureCelsiusTimes100": 16,
+      "vddaMillivolts": 17
+    },
+    "groups": {
+      "base": 32,
+      "count": 7,
+      "stride": 5,
+      "inclusiveEnd": 66,
+      "exclusiveEnd": 67,
+      "fields": [
+        { "offset": 0, "name": "innerMode", "type": "u16" },
+        { "offset": 1, "name": "hue", "type": "u16" },
+        { "offset": 2, "name": "saturation", "type": "u16" },
+        { "offset": 3, "name": "value", "type": "u16" },
+        { "offset": 4, "name": "innerParam", "type": "u16" }
+      ]
+    },
+    "diagnosticClearKeyHex": "a55a",
+    "evidence": [
+      "android/app/src/main/java/com/example/peacock/protocol/RegisterMap.kt:3-29",
+      "esp32/lumia_esp32/components/lumia_runtime/include/register_map.h:6-38",
+      "esp32/lumia_esp32/components/lumia_runtime/register_map.c:6-40,258-302"
+    ]
+  },
+  "capabilities": {
+    "fieldType": "u8-bitset",
+    "knownBits": [
+      {
+        "mask": 16,
+        "hex": "10",
+        "name": "bleOta",
+        "confidence": "android-semantic-and-firmware-command-implemented"
+      },
+      {
+        "mask": 32,
+        "hex": "20",
+        "name": "volatileEffect",
+        "confidence": "android-semantic-and-firmware-command-implemented"
+      },
+      {
+        "mask": 64,
+        "hex": "40",
+        "name": "pixelEffect",
+        "confidence": "android-semantic-and-firmware-command-implemented"
+      }
+    ],
+    "currentFirmwareAdvertisedValue": 127,
+    "unknownAdvertisedMasks": [1, 2, 4, 8],
+    "consumerRule": "Ignore unknown bits and require the relevant known bit before using an optional command family.",
+    "evidence": [
+      "android/app/src/main/java/com/example/peacock/feature/ota/OtaProtocol.kt:29-43",
+      "android/app/src/main/java/com/example/peacock/feature/effects/EffectProtocol.kt:6-13",
+      "esp32/lumia_esp32/main/app_main.c:289-308"
+    ]
+  },
+  "effects": {
+    "sessionIntegerOrder": "little-endian",
+    "sequenceIntegerOrder": "little-endian",
+    "commands": [
+      {
+        "code": 32,
+        "hex": "20",
+        "name": "begin",
+        "requestPayloadBytes": 1,
+        "requestCompleteFrameBytes": 6,
+        "requestFields": ["command"],
+        "successResponseData": [
+          { "tlvType": 48, "hex": "30", "name": "sessionId", "type": "u32-le", "bytes": 4 }
+        ]
+      },
+      {
+        "code": 33,
+        "hex": "21",
+        "name": "groupFrame",
+        "requestPayloadBytes": 49,
+        "requestCompleteFrameBytes": 54,
+        "requestFields": [
+          { "name": "command", "type": "u8", "bytes": 1 },
+          { "name": "sessionId", "type": "u32-le", "bytes": 4 },
+          { "name": "sequence", "type": "u16-le", "bytes": 2 },
+          {
+            "name": "groups",
+            "repeat": 7,
+            "bytesPerItem": 6,
+            "itemFields": [
+              { "name": "innerMode", "type": "u8", "bytes": 1 },
+              { "name": "hue", "type": "u16-le", "bytes": 2 },
+              { "name": "saturation", "type": "u8", "bytes": 1 },
+              { "name": "value", "type": "u8", "bytes": 1 },
+              { "name": "innerParam", "type": "u8", "bytes": 1 }
+            ]
+          }
+        ],
+        "successResponseData": [
+          { "tlvType": 49, "hex": "31", "name": "acceptedSequence", "type": "u16-le", "bytes": 2 }
+        ]
+      },
+      {
+        "code": 34,
+        "hex": "22",
+        "name": "heartbeat",
+        "requestPayloadBytes": 5,
+        "requestCompleteFrameBytes": 10,
+        "requestFields": [
+          { "name": "command", "type": "u8", "bytes": 1 },
+          { "name": "sessionId", "type": "u32-le", "bytes": 4 }
+        ]
+      },
+      {
+        "code": 35,
+        "hex": "23",
+        "name": "end",
+        "requestPayloadBytes": 5,
+        "requestCompleteFrameBytes": 10,
+        "requestFields": [
+          { "name": "command", "type": "u8", "bytes": 1 },
+          { "name": "sessionId", "type": "u32-le", "bytes": 4 }
+        ]
+      },
+      {
+        "code": 36,
+        "hex": "24",
+        "name": "pixelFrame",
+        "requestPayloadBytes": 135,
+        "requestCompleteFrameBytes": 140,
+        "requestFields": [
+          { "name": "command", "type": "u8", "bytes": 1 },
+          { "name": "sessionId", "type": "u32-le", "bytes": 4 },
+          { "name": "sequence", "type": "u16-le", "bytes": 2 },
+          { "name": "pixelFormat", "type": "u8", "bytes": 1, "constant": 1, "meaning": "RGB888" },
+          { "name": "pixelCount", "type": "u8", "bytes": 1, "constantFrom": "geometry.pixelCount" },
+          { "name": "pixels", "repeatFrom": "geometry.pixelCount", "itemType": "rgb888", "bytesPerItem": 3, "order": "group-major" }
+        ],
+        "successResponseData": [
+          { "tlvType": 49, "hex": "31", "name": "acceptedSequence", "type": "u16-le", "bytes": 2 }
+        ]
+      }
+    ],
+    "responseEnvelope": {
+      "payloadPrefix": [
+        { "name": "commandEcho", "type": "u8", "bytes": 1 },
+        { "name": "status", "type": "u8", "bytes": 1, "successValue": 0 }
+      ],
+      "failureBehavior": "Current firmware returns status 1 and omits response data for any command error."
+    },
+    "timingMilliseconds": {
+      "groupFramePeriod": 100,
+      "pixelFramePeriod": 50,
+      "heartbeatPeriod": 1000,
+      "firmwareSessionTimeout": 5000
+    },
+    "evidence": [
+      "android/app/src/main/java/com/example/peacock/feature/effects/EffectProtocol.kt:6-77",
+      "esp32/lumia_esp32/main/app_main.c:58-65,342-443",
+      "esp32/lumia_esp32/components/lumia_effect_session/include/effect_session.h:8-65",
+      "esp32/lumia_esp32/components/lumia_effect_session/effect_session.c:28-179"
+    ]
+  },
+  "ota": {
+    "integerOrder": "little-endian",
+    "layoutVersionSentByAndroid": 2,
+    "maximumBleDataChunkBytes": 118,
+    "tlv": {
+      "header": [
+        { "name": "type", "type": "u8", "bytes": 1 },
+        { "name": "length", "type": "u8", "bytes": 1 }
+      ],
+      "getInfo": [
+        { "type": 1, "name": "protocolVersion", "valueType": "u8" },
+        { "type": 2, "name": "layoutVersion", "valueType": "u8" },
+        { "type": 3, "name": "variant", "valueType": "utf8" },
+        { "type": 4, "name": "assetPackVersion", "valueType": "u8" },
+        { "type": 5, "name": "capabilities", "valueType": "u8-bitset" },
+        { "type": 6, "name": "secureVersion", "valueType": "u32-le" },
+        { "type": 7, "name": "firmwareVersion", "valueType": "utf8" }
+      ],
+      "prepareRequest": [
+        { "type": 1, "name": "nonce", "valueType": "bytes", "requiredBytes": 16 }
+      ],
+      "prepareResponse": [
+        { "type": 16, "name": "ssid", "valueType": "utf8" },
+        { "type": 17, "name": "bssid", "valueType": "bytes", "requiredBytes": 6 },
+        { "type": 18, "name": "token", "valueType": "bytes", "requiredBytes": 16 },
+        { "type": 19, "name": "timeoutSeconds", "valueType": "u32-le" }
+      ],
+      "bleDataResponse": [
+        { "type": 32, "name": "nextOffset", "valueType": "u32-le" }
+      ],
+      "bleStatusResponse": [
+        { "type": 33, "name": "state", "valueType": "u8" },
+        { "type": 34, "name": "receivedBytes", "valueType": "u32-le" },
+        { "type": 35, "name": "expectedBytes", "valueType": "u32-le" },
+        { "type": 36, "name": "errorCode", "valueType": "i32-le" }
+      ]
+    },
+    "states": [
+      { "value": 0, "name": "waiting" },
+      { "value": 1, "name": "receiving" },
+      { "value": 2, "name": "verifying" },
+      { "value": 3, "name": "verified" },
+      { "value": 4, "name": "rebooting" },
+      { "value": 5, "name": "failed" }
+    ],
+    "commands": [
+      { "code": 1, "hex": "01", "name": "getInfo", "requestPayloadBytes": 1, "requestCompleteFrameBytes": 6 },
+      { "code": 2, "hex": "02", "name": "prepareWifi", "requestPayloadBytes": 19, "requestCompleteFrameBytes": 24 },
+      { "code": 3, "hex": "03", "name": "cancelPrepare", "requestPayloadBytes": 1, "requestCompleteFrameBytes": 6 },
+      {
+        "code": 16,
+        "hex": "10",
+        "name": "bleBegin",
+        "requestPayloadBytes": 38,
+        "requestCompleteFrameBytes": 43,
+        "requestFields": [
+          { "name": "command", "type": "u8", "bytes": 1 },
+          { "name": "expectedBytes", "type": "u32-le", "bytes": 4 },
+          { "name": "layoutVersion", "type": "u8", "bytes": 1 },
+          { "name": "sha256", "type": "bytes", "bytes": 32 }
+        ]
+      },
+      {
+        "code": 17,
+        "hex": "11",
+        "name": "bleData",
+        "requestPayloadBytes": { "minimum": 6, "maximum": 123 },
+        "requestCompleteFrameBytes": { "minimum": 11, "maximum": 128 },
+        "requestFields": [
+          { "name": "command", "type": "u8", "bytes": 1 },
+          { "name": "offset", "type": "u32-le", "bytes": 4 },
+          { "name": "firmwareData", "type": "bytes", "bytes": { "minimum": 1, "maximum": 118 } }
+        ]
+      },
+      { "code": 18, "hex": "12", "name": "bleStatus", "requestPayloadBytes": 1, "requestCompleteFrameBytes": 6 },
+      { "code": 20, "hex": "14", "name": "bleCommit", "requestPayloadBytes": 1, "requestCompleteFrameBytes": 6 },
+      { "code": 21, "hex": "15", "name": "bleCancel", "requestPayloadBytes": 1, "requestCompleteFrameBytes": 6 }
+    ],
+    "evidence": [
+      "android/app/src/main/java/com/example/peacock/feature/ota/OtaProtocol.kt:29-212",
+      "esp32/lumia_esp32/main/app_main.c:50-57,281-341,444-507",
+      "esp32/lumia_esp32/components/lumia_ota/include/ota_service.h:14-50",
+      "esp32/lumia_esp32/components/lumia_ota/include/ota_session.h:12-37"
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "PROTO-001",
+      "topic": "Capability masks 0x01, 0x02, 0x04 and 0x08",
+      "fact": "Current firmware advertises 0x7f, while current Android code assigns names only to 0x10, 0x20 and 0x40.",
+      "consumerRule": "Preserve and ignore unknown bits; do not assign behavior or labels without an ADR and both-side evidence."
+    },
+    {
+      "id": "PROTO-002",
+      "topic": "Geometry negotiation",
+      "fact": "GET_INFO has no geometry TLV in the current implementation.",
+      "consumerRule": "Use owner-confirmed fallback 7x6=42 for the current protocol/firmware family; do not invent a TLV on the existing version."
+    },
+    {
+      "id": "PROTO-003",
+      "topic": "Vendor failure status taxonomy",
+      "fact": "Current firmware collapses all vendor command errors to status 1.",
+      "consumerRule": "Treat any nonzero status as rejection; do not infer a more specific error cause from status 1."
+    },
+    {
+      "id": "PROTO-004",
+      "topic": "TLV duplicate keys and unknown keys",
+      "fact": "Android currently retains the last duplicate key and ignores unknown keys; firmware does not emit duplicates in inspected paths.",
+      "consumerRule": "Cross-platform strictness must be decided in an ADR before changing accepted wire behavior. Golden vectors do not bless duplicate keys."
+    },
+    {
+      "id": "PROTO-005",
+      "topic": "Physical group/channel direction",
+      "fact": "Linear protocol order is group-major, but physical strip direction/routing is an adapter concern and is not encoded in the wire frame.",
+      "consumerRule": "Clients emit group-major logical order only; do not reverse groups or pixels in protocol codecs."
+    }
+  ]
+}

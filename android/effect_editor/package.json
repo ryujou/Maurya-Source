@@ -1,0 +1,32 @@
+{
+  "name": "maurya-effect-editor",
+  "private": true,
+  "version": "4.2.1",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "render:block-demos": "npm run build && node ../../../..//tools/render-maurya-block-demos.mjs",
+    "test": "npm run build && npm run test:unit && npm run test:ui",
+    "test:unit": "vitest run",
+    "test:ui": "playwright test"
+  },
+  "dependencies": {
+    "@blockly/field-colour": "6.0.12",
+    "@codemirror/autocomplete": "6.20.0",
+    "@codemirror/commands": "6.10.1",
+    "@codemirror/lang-cpp": "6.0.3",
+    "@codemirror/language": "6.11.3",
+    "@codemirror/lint": "6.8.5",
+    "@codemirror/search": "6.5.11",
+    "@codemirror/state": "6.5.2",
+    "@codemirror/view": "6.38.2",
+    "@lezer/highlight": "1.2.3",
+    "blockly": "12.5.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.0",
+    "typescript": "5.7.3",
+    "vite": "6.4.3",
+    "vitest": "3.2.7"
+  }
+}

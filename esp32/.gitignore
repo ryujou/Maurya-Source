@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+lumia_esp32/components/lumia_effects/test/test_effect_engine
+lumia_esp32/tests/host/test_protocol_runtime
+
+/lumia_esp32.zip
+/lumia_esp32/web_ui/node_modules/
+/lumia_esp32/web_ui/dist/

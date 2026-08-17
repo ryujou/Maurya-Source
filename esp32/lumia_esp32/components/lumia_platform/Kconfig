@@ -1,0 +1,141 @@
+menu "Lumia platform configuration"
+
+    config LUMIA_BLE_DEVICE_NAME
+        string "Legacy BLE name prefix fallback"
+        default "Maurya"
+        help
+            The normal BLE name uses the Wi-Fi SoftAP prefix and MAC suffix,
+            so BLE and Wi-Fi both appear as Maurya-XXXX. This value is only
+            used when the Wi-Fi prefix setting is unavailable.
+
+    config LUMIA_BLE_STATUS_LED_GPIO
+        int "BLE status LED GPIO"
+        range 0 21
+        default 8
+
+    config LUMIA_BLE_STATUS_LED_ACTIVE_LOW
+        bool "BLE status LED active low"
+        default y
+
+    config LUMIA_MODE_BUTTON_GPIO
+        int "Mode button GPIO"
+        range 0 21
+        default 9
+
+    config LUMIA_MODE_BUTTON_ACTIVE_LOW
+        bool "Mode button active low"
+        default y
+
+    config LUMIA_MODE_BUTTON_DEBOUNCE_MS
+        int "Mode button debounce time (ms)"
+        range 5 200
+        default 30
+
+    config LUMIA_MODE_BUTTON_LONG_PRESS_MS
+        int "Mode button long press time (ms)"
+        range 500 10000
+        default 2000
+
+    config LUMIA_SLEEP_SWITCH_GPIO
+        int "Sleep control switch GPIO"
+        range 0 21
+        default 4
+
+    config LUMIA_SLEEP_SWITCH_ACTIVE_LOW
+        bool "Sleep control switch active low"
+        default y
+
+    config LUMIA_SLEEP_SWITCH_DEBOUNCE_MS
+        int "Sleep control switch debounce time (ms)"
+        range 5 200
+        default 30
+
+    config LUMIA_LED_CH1_GPIO
+        int "WS2812 channel 1 GPIO"
+        range 0 21
+        default 0
+
+    config LUMIA_LED_CH2_GPIO
+        int "WS2812 channel 2 GPIO"
+        range 0 21
+        default 1
+
+    config LUMIA_LED_CH3_GPIO
+        int "WS2812 channel 3 GPIO"
+        range 0 21
+        default 3
+
+    config LUMIA_LED_CH4_GPIO
+        int "WS2812 channel 4 GPIO"
+        range 0 21
+        default 7
+
+    config LUMIA_LED_CH5_GPIO
+        int "WS2812 channel 5 GPIO"
+        range 0 21
+        default 10
+
+    config LUMIA_LED_CH6_GPIO
+        int "WS2812 channel 6 GPIO"
+        range 0 21
+        default 20
+
+    config LUMIA_LED_CH7_GPIO
+        int "WS2812 channel 7 GPIO"
+        range 0 21
+        default 21
+
+    config LUMIA_LED_CH1_COUNT
+        int "WS2812 channel 1 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_CH2_COUNT
+        int "WS2812 channel 2 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_CH3_COUNT
+        int "WS2812 channel 3 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_CH4_COUNT
+        int "WS2812 channel 4 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_CH5_COUNT
+        int "WS2812 channel 5 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_CH6_COUNT
+        int "WS2812 channel 6 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_CH7_COUNT
+        int "WS2812 channel 7 LED count"
+        range 1 255
+        default 6
+
+    config LUMIA_LED_TX_PHYSICAL_MAX_COUNT
+        int "WS2812 per-channel physical clear length"
+        range 1 255
+        default 6
+        help
+            Number of LEDs transmitted on each channel refresh. Values above
+            the logical channel count are sent as zeros to clear the tail of a
+            longer test strip. Set this to the physical strip length when using
+            a long strip for bench testing; keep it at 6 for the final hardware.
+
+    config LUMIA_LED_TX_RESET_US
+        int "WS2812 inter-channel reset low time (us)"
+        range 80 5000
+        default 300
+        help
+            Extra low-level idle time inserted after each channel refresh to
+            improve latch margin on long wires or long test strips.
+
+endmenu

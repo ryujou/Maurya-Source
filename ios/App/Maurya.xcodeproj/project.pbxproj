@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A09000000000000000000001 /* MauryaProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000001 /* MauryaProtocol */; };
+		A09000000000000000000002 /* MauryaBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000002 /* MauryaBluetooth */; };
+		A09000000000000000000003 /* MauryaDevice in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000003 /* MauryaDevice */; };
+		A09000000000000000000004 /* MauryaShare in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000004 /* MauryaShare */; };
+		A09000000000000000000005 /* MauryaProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000001 /* MauryaProtocol */; };
+		A09000000000000000000006 /* MauryaBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000002 /* MauryaBluetooth */; };
+		A09000000000000000000007 /* MauryaDevice in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000003 /* MauryaDevice */; };
+		A09000000000000000000008 /* MauryaShare in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000004 /* MauryaShare */; };
+		A09000000000000000000009 /* MauryaEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000005 /* MauryaEffects */; };
+		A0900000000000000000000A /* MauryaResources in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000006 /* MauryaResources */; };
+		A0900000000000000000000B /* MauryaAnalysis in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000007 /* MauryaAnalysis */; };
+		A0900000000000000000000C /* MauryaEditor in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000008 /* MauryaEditor */; };
+		A0900000000000000000000D /* MauryaPlayback in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000009 /* MauryaPlayback */; };
+		A0900000000000000000000E /* MauryaOTA in Frameworks */ = {isa = PBXBuildFile; productRef = A0B00000000000000000000A /* MauryaOTA */; };
+		A0900000000000000000000F /* MauryaEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000005 /* MauryaEffects */; };
+		A09000000000000000000010 /* MauryaResources in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000006 /* MauryaResources */; };
+		A09000000000000000000011 /* MauryaAnalysis in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000007 /* MauryaAnalysis */; };
+		A09000000000000000000012 /* MauryaEditor in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000008 /* MauryaEditor */; };
+		A09000000000000000000013 /* MauryaPlayback in Frameworks */ = {isa = PBXBuildFile; productRef = A0B000000000000000000009 /* MauryaPlayback */; };
+		A09000000000000000000014 /* MauryaOTA in Frameworks */ = {isa = PBXBuildFile; productRef = A0B00000000000000000000A /* MauryaOTA */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000001 /* Maurya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maurya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000002 /* MauryaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MauryaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000003 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A10000000000000000000004 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		A10000000000000000000005 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		A10000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000007 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C10000000000000000000001 /* MauryaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MauryaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A11000000000000000000001 /* Sources */ = {isa = PBXFileSystemSynchronizedRootGroup; path = Sources; sourceTree = "<group>"; };
+		A11000000000000000000002 /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; path = Resources; sourceTree = "<group>"; };
+		A11000000000000000000003 /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = Tests; sourceTree = "<group>"; };
+		C11000000000000000000001 /* UITests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = UITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09000000000000000000001 /* MauryaProtocol in Frameworks */,
+				A09000000000000000000002 /* MauryaBluetooth in Frameworks */,
+				A09000000000000000000003 /* MauryaDevice in Frameworks */,
+				A09000000000000000000004 /* MauryaShare in Frameworks */,
+				A09000000000000000000009 /* MauryaEffects in Frameworks */,
+				A0900000000000000000000A /* MauryaResources in Frameworks */,
+				A0900000000000000000000B /* MauryaAnalysis in Frameworks */,
+				A0900000000000000000000C /* MauryaEditor in Frameworks */,
+				A0900000000000000000000D /* MauryaPlayback in Frameworks */,
+				A0900000000000000000000E /* MauryaOTA in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09000000000000000000005 /* MauryaProtocol in Frameworks */,
+				A09000000000000000000006 /* MauryaBluetooth in Frameworks */,
+				A09000000000000000000007 /* MauryaDevice in Frameworks */,
+				A09000000000000000000008 /* MauryaShare in Frameworks */,
+				A0900000000000000000000F /* MauryaEffects in Frameworks */,
+				A09000000000000000000010 /* MauryaResources in Frameworks */,
+				A09000000000000000000011 /* MauryaAnalysis in Frameworks */,
+				A09000000000000000000012 /* MauryaEditor in Frameworks */,
+				A09000000000000000000013 /* MauryaPlayback in Frameworks */,
+				A09000000000000000000014 /* MauryaOTA in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A13000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A11000000000000000000001 /* Sources */,
+				A11000000000000000000002 /* Resources */,
+				A11000000000000000000003 /* Tests */,
+				C11000000000000000000001 /* UITests */,
+				A13000000000000000000003 /* Config */,
+				A10000000000000000000007 /* README.md */,
+				A13000000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A13000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000001 /* Maurya.app */,
+				A10000000000000000000002 /* MauryaTests.xctest */,
+				C10000000000000000000001 /* MauryaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000003 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* Debug.xcconfig */,
+				A10000000000000000000004 /* Staging.xcconfig */,
+				A10000000000000000000005 /* Release.xcconfig */,
+				A10000000000000000000006 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14000000000000000000001 /* Maurya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19000000000000000000002 /* Build configuration list for PBXNativeTarget "Maurya" */;
+			buildPhases = (
+				A16000000000000000000001 /* Sources */,
+				A12000000000000000000001 /* Frameworks */,
+				A17000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A11000000000000000000001 /* Sources */,
+				A11000000000000000000002 /* Resources */,
+			);
+			name = Maurya;
+			packageProductDependencies = (
+				A0B000000000000000000001 /* MauryaProtocol */,
+				A0B000000000000000000002 /* MauryaBluetooth */,
+				A0B000000000000000000003 /* MauryaDevice */,
+				A0B000000000000000000004 /* MauryaShare */,
+				A0B000000000000000000005 /* MauryaEffects */,
+				A0B000000000000000000006 /* MauryaResources */,
+				A0B000000000000000000007 /* MauryaAnalysis */,
+				A0B000000000000000000008 /* MauryaEditor */,
+				A0B000000000000000000009 /* MauryaPlayback */,
+				A0B00000000000000000000A /* MauryaOTA */,
+			);
+			productName = Maurya;
+			productReference = A10000000000000000000001 /* Maurya.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A14000000000000000000002 /* MauryaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19000000000000000000003 /* Build configuration list for PBXNativeTarget "MauryaTests" */;
+			buildPhases = (
+				A16000000000000000000002 /* Sources */,
+				A12000000000000000000002 /* Frameworks */,
+				A17000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15000000000000000000001 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A11000000000000000000003 /* Tests */,
+			);
+			name = MauryaTests;
+			packageProductDependencies = (
+				A0B000000000000000000001 /* MauryaProtocol */,
+				A0B000000000000000000002 /* MauryaBluetooth */,
+				A0B000000000000000000003 /* MauryaDevice */,
+				A0B000000000000000000004 /* MauryaShare */,
+				A0B000000000000000000005 /* MauryaEffects */,
+				A0B000000000000000000006 /* MauryaResources */,
+				A0B000000000000000000007 /* MauryaAnalysis */,
+				A0B000000000000000000008 /* MauryaEditor */,
+				A0B000000000000000000009 /* MauryaPlayback */,
+				A0B00000000000000000000A /* MauryaOTA */,
+			);
+			productName = MauryaTests;
+			productReference = A10000000000000000000002 /* MauryaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C14000000000000000000001 /* MauryaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19000000000000000000001 /* Build configuration list for PBXNativeTarget "MauryaUITests" */;
+			buildPhases = (
+				C16000000000000000000001 /* Sources */,
+				C12000000000000000000001 /* Frameworks */,
+				C17000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15000000000000000000001 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C11000000000000000000001 /* UITests */,
+			);
+			name = MauryaUITests;
+			packageProductDependencies = (
+			);
+			productName = MauryaUITests;
+			productReference = C10000000000000000000001 /* MauryaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A18000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A14000000000000000000001 = { CreatedOnToolsVersion = 26.6; };
+					A14000000000000000000002 = { CreatedOnToolsVersion = 26.6; TestTargetID = A14000000000000000000001; };
+					C14000000000000000000001 = { CreatedOnToolsVersion = 26.6; TestTargetID = A14000000000000000000001; };
+				};
+			};
+			buildConfigurationList = A19000000000000000000001 /* Build configuration list for PBXProject "Maurya" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+				"zh-Hans",
+			);
+			mainGroup = A13000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A13000000000000000000002 /* Products */;
+			packageReferences = (
+				A0A000000000000000000001 /* XCLocalSwiftPackageReference ".." */,
+				A0A000000000000000000002 /* XCLocalSwiftPackageReference "../Packages/MauryaBluetooth" */,
+				A0A000000000000000000003 /* XCLocalSwiftPackageReference "../Packages/MauryaDevice" */,
+				A0A000000000000000000004 /* XCLocalSwiftPackageReference "../Packages/MauryaShare" */,
+				A0A000000000000000000005 /* XCLocalSwiftPackageReference "../Packages/MauryaEffects" */,
+				A0A000000000000000000006 /* XCLocalSwiftPackageReference "../Packages/MauryaResources" */,
+				A0A000000000000000000007 /* XCLocalSwiftPackageReference "../Packages/MauryaAnalysis" */,
+				A0A000000000000000000008 /* XCLocalSwiftPackageReference "../Packages/MauryaEditor" */,
+				A0A000000000000000000009 /* XCLocalSwiftPackageReference "../Packages/MauryaPlayback" */,
+				A0A00000000000000000000A /* XCLocalSwiftPackageReference "../Packages/MauryaOTA" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14000000000000000000001 /* Maurya */,
+				A14000000000000000000002 /* MauryaTests */,
+				C14000000000000000000001 /* MauryaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A17000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A17000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C17000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A16000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A16000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C16000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A15000000000000000000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A14000000000000000000001 /* Maurya */; targetProxy = A15000000000000000000002 /* PBXContainerItemProxy */; };
+		C15000000000000000000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A14000000000000000000001 /* Maurya */; targetProxy = C15000000000000000000002 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		A15000000000000000000002 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = A18000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A14000000000000000000001; remoteInfo = Maurya; };
+		C15000000000000000000002 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = A18000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A14000000000000000000001; remoteInfo = Maurya; };
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		A20000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_SUPPRESS_WARNINGS = NO; SWIFT_VERSION = 6.0; }; name = Debug; };
+		A20000000000000000000002 /* Staging */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_SUPPRESS_WARNINGS = NO; SWIFT_VERSION = 6.0; }; name = Staging; };
+		A20000000000000000000003 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_SUPPRESS_WARNINGS = NO; SWIFT_VERSION = 6.0; }; name = Release; };
+		A20000000000000000000004 /* Debug */ = {isa = XCBuildConfiguration; baseConfigurationReference = A10000000000000000000003 /* Debug.xcconfig */; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_TESTABILITY = YES; GCC_TREAT_WARNINGS_AS_ERRORS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Config/Info.plist; LOCALIZATION_PREFERS_STRING_CATALOGS = YES; MARKETING_VERSION = 1.0; ONLY_ACTIVE_ARCH = YES; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.Maurya; PRODUCT_NAME = Maurya; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = NO; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		A20000000000000000000005 /* Staging */ = {isa = XCBuildConfiguration; baseConfigurationReference = A10000000000000000000004 /* Staging.xcconfig */; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_TESTABILITY = YES; GCC_TREAT_WARNINGS_AS_ERRORS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Config/Info.plist; LOCALIZATION_PREFERS_STRING_CATALOGS = YES; MARKETING_VERSION = 1.0; ONLY_ACTIVE_ARCH = YES; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.Maurya; PRODUCT_NAME = Maurya; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = NO; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Staging; };
+		A20000000000000000000006 /* Release */ = {isa = XCBuildConfiguration; baseConfigurationReference = A10000000000000000000005 /* Release.xcconfig */; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_TESTABILITY = NO; GCC_TREAT_WARNINGS_AS_ERRORS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Config/Info.plist; LOCALIZATION_PREFERS_STRING_CATALOGS = YES; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.Maurya; PRODUCT_NAME = Maurya; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = NO; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; TARGETED_DEVICE_FAMILY = "1,2"; VALIDATE_PRODUCT = YES; }; name = Release; };
+		A20000000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.MauryaTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maurya.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maurya"; }; name = Debug; };
+		A20000000000000000000008 /* Staging */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.MauryaTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maurya.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maurya"; }; name = Staging; };
+		A20000000000000000000009 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.MauryaTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maurya.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maurya"; }; name = Release; };
+		C20000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.MauryaUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = Maurya; }; name = Debug; };
+		C20000000000000000000002 /* Staging */ = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.MauryaUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = Maurya; }; name = Staging; };
+		C20000000000000000000003 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.ryujou.MauryaUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_TREAT_WARNINGS_AS_ERRORS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = Maurya; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A19000000000000000000001 /* Build configuration list for PBXProject "Maurya" */ = {isa = XCConfigurationList; buildConfigurations = (A20000000000000000000001 /* Debug */, A20000000000000000000002 /* Staging */, A20000000000000000000003 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		A19000000000000000000002 /* Build configuration list for PBXNativeTarget "Maurya" */ = {isa = XCConfigurationList; buildConfigurations = (A20000000000000000000004 /* Debug */, A20000000000000000000005 /* Staging */, A20000000000000000000006 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		A19000000000000000000003 /* Build configuration list for PBXNativeTarget "MauryaTests" */ = {isa = XCConfigurationList; buildConfigurations = (A20000000000000000000007 /* Debug */, A20000000000000000000008 /* Staging */, A20000000000000000000009 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		C19000000000000000000001 /* Build configuration list for PBXNativeTarget "MauryaUITests" */ = {isa = XCConfigurationList; buildConfigurations = (C20000000000000000000001 /* Debug */, C20000000000000000000002 /* Staging */, C20000000000000000000003 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A0A000000000000000000001 /* XCLocalSwiftPackageReference ".." */ = {isa = XCLocalSwiftPackageReference; relativePath = ..; };
+		A0A000000000000000000002 /* XCLocalSwiftPackageReference "../Packages/MauryaBluetooth" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaBluetooth; };
+		A0A000000000000000000003 /* XCLocalSwiftPackageReference "../Packages/MauryaDevice" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaDevice; };
+		A0A000000000000000000004 /* XCLocalSwiftPackageReference "../Packages/MauryaShare" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaShare; };
+		A0A000000000000000000005 /* XCLocalSwiftPackageReference "../Packages/MauryaEffects" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaEffects; };
+		A0A000000000000000000006 /* XCLocalSwiftPackageReference "../Packages/MauryaResources" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaResources; };
+		A0A000000000000000000007 /* XCLocalSwiftPackageReference "../Packages/MauryaAnalysis" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaAnalysis; };
+		A0A000000000000000000008 /* XCLocalSwiftPackageReference "../Packages/MauryaEditor" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaEditor; };
+		A0A000000000000000000009 /* XCLocalSwiftPackageReference "../Packages/MauryaPlayback" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaPlayback; };
+		A0A00000000000000000000A /* XCLocalSwiftPackageReference "../Packages/MauryaOTA" */ = {isa = XCLocalSwiftPackageReference; relativePath = ../Packages/MauryaOTA; };
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0B000000000000000000001 /* MauryaProtocol */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000001 /* XCLocalSwiftPackageReference ".." */; productName = MauryaProtocol; };
+		A0B000000000000000000002 /* MauryaBluetooth */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000002 /* XCLocalSwiftPackageReference "../Packages/MauryaBluetooth" */; productName = MauryaBluetooth; };
+		A0B000000000000000000003 /* MauryaDevice */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000003 /* XCLocalSwiftPackageReference "../Packages/MauryaDevice" */; productName = MauryaDevice; };
+		A0B000000000000000000004 /* MauryaShare */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000004 /* XCLocalSwiftPackageReference "../Packages/MauryaShare" */; productName = MauryaShare; };
+		A0B000000000000000000005 /* MauryaEffects */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000005 /* XCLocalSwiftPackageReference "../Packages/MauryaEffects" */; productName = MauryaEffects; };
+		A0B000000000000000000006 /* MauryaResources */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000006 /* XCLocalSwiftPackageReference "../Packages/MauryaResources" */; productName = MauryaResources; };
+		A0B000000000000000000007 /* MauryaAnalysis */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000007 /* XCLocalSwiftPackageReference "../Packages/MauryaAnalysis" */; productName = MauryaAnalysis; };
+		A0B000000000000000000008 /* MauryaEditor */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000008 /* XCLocalSwiftPackageReference "../Packages/MauryaEditor" */; productName = MauryaEditor; };
+		A0B000000000000000000009 /* MauryaPlayback */ = {isa = XCSwiftPackageProductDependency; package = A0A000000000000000000009 /* XCLocalSwiftPackageReference "../Packages/MauryaPlayback" */; productName = MauryaPlayback; };
+		A0B00000000000000000000A /* MauryaOTA */ = {isa = XCSwiftPackageProductDependency; package = A0A00000000000000000000A /* XCLocalSwiftPackageReference "../Packages/MauryaOTA" */; productName = MauryaOTA; };
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A18000000000000000000001 /* Project object */;
+}

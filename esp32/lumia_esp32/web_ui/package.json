@@ -1,0 +1,22 @@
+{
+  "name": "maurya-esp32-web-ui",
+  "private": true,
+  "version": "1.8.2",
+  "type": "module",
+  "scripts": {
+    "fetch:logos": "python tools/fetch_imas_logos.py",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "build:ja": "vite build --mode ja",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node tools/verify-build.mjs --variant multilingual",
+    "test:ja": "node tools/verify-build.mjs --variant ja"
+  },
+  "dependencies": {
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "vite": "latest"
+  }
+}

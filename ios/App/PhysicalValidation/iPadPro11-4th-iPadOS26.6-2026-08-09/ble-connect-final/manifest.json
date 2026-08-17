@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "00008112-001C71043A45401E",
+        "deviceName" : "Ryujou的 iPadPro",
+        "exportedFileName" : "AE2372D0-2E0A-4E7E-8C72-DFCB2B8045ED.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "physical-ble-connected-read-only-snapshot_0_36F7CB65-F25C-44D8-B3E4-62C582F13CD2.png",
+        "timestamp" : 1786261695.605
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testPhysicalBluetoothConnectsAndReadsSnapshotWithoutWriting()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testPhysicalBluetoothConnectsAndReadsSnapshotWithoutWriting"
+  }
+]

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Maurya</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.ryujou.Maurya.deep-link</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>maurya</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MauryaLogLevel</key>
+	<string>$(MAURYA_LOG_LEVEL)</string>
+	<key>MauryaServiceBaseURL</key>
+	<string>$(MAURYA_SERVICE_BASE_URL)</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Maurya uses Bluetooth to find and control your nearby Maurya lighting device.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Maurya uses the camera only while you scan a Maurya temporary-share QR code.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Maurya analyzes live audio only while you run an audio-reactive effect. Audio is not saved or uploaded.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Maurya reads motion only while you run a motion-reactive effect.</string>
+	<key>MauryaOTABaseURL</key>
+	<string>$(MAURYA_OTA_BASE_URL)</string>
+	<key>MauryaOTAProductionPublicKey</key>
+	<string>$(MAURYA_OTA_PRODUCTION_PUBLIC_KEY)</string>
+	<key>MauryaOTAProductionKeyID</key>
+	<string>$(MAURYA_OTA_PRODUCTION_KEY_ID)</string>
+	<key>MauryaOTAAllowedHosts</key>
+	<string>$(MAURYA_OTA_ALLOWED_HOSTS)</string>
+	<key>MauryaOTAClientVersion</key>
+	<string>$(MAURYA_OTA_CLIENT_VERSION)</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

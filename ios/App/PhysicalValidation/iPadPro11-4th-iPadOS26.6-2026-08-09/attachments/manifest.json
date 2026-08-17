@@ -1,0 +1,35 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "00008112-001C71043A45401E",
+        "deviceName" : "Ryujou的 iPadPro",
+        "exportedFileName" : "09140354-BBAE-4E0A-B558-B2AF8F45252C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ipad-landscape-ota-fail-closed-split_0_0A1D30F3-5617-4DE3-94D8-C35F85C107E7.png",
+        "timestamp" : 1786260853.337
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "00008112-001C71043A45401E",
+        "deviceName" : "Ryujou的 iPadPro",
+        "exportedFileName" : "6BB34902-0748-427C-8282-02273F0F718A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ipad-landscape-editor-keyboard-split_0_891E999B-F732-4CD5-B388-1E6AA139FB4E.png",
+        "timestamp" : 1786260843.54
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "00008112-001C71043A45401E",
+        "deviceName" : "Ryujou的 iPadPro",
+        "exportedFileName" : "63284C0E-F7AC-404E-B2BC-9910244CB382.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ipad-landscape-resources-split_0_FB491587-531B-46AF-81EA-B1282FEB794F.png",
+        "timestamp" : 1786260833.644
+      }
+    ],
+    "testIdentifier" : "MauryaUITests/testIPadProLandscapeKeepsSidebarAndMajorRoutesUsable()",
+    "testIdentifierURL" : "test://com.apple.xcode/Maurya/MauryaUITests/MauryaUITests/testIPadProLandscapeKeepsSidebarAndMajorRoutesUsable"
+  }
+]
